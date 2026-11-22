@@ -21,7 +21,7 @@ def eq_window(p):
         letters(p, text, 58 - len(text) * 5, y, "ink")
 
 
-RAILS = (4, 9)  # a slider's two rails, from its left
+RAILS = (4, 8)  # a slider's two rails, from its left: either side of the thumb's middle, which the player puts a pixel in
 THUMB = 11
 CAP = 3  # how far down (and up) a rail's end flares into its little triangle
 
@@ -98,6 +98,7 @@ def eqmain(p):
     title_strip(p, 0, 149, 275, NAME, False)
     for k in range(28):
         slider_frame(p, 13 + (k % 14) * 15, 164 + (k // 14) * 65, k)
+    p.rect(0, 164, 11, 23, "body")  # the thumbs' corners show: the panel's colour, not the sheet's black
     eq_thumb(p, 0, 164)
     eq_thumb(p, 0, 176, True)
     lettered_button(p, 224, 164, 44, 12, "PRESETS")
