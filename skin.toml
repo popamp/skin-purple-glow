@@ -88,7 +88,7 @@ text = "text.svg"
 numbers = "numbers.svg"
 
 [playlist]
-normal = "ink-light"
+normal = "ink"
 current = "glow-light"
 normal_bg = "#000000"
 selected_bg = "glow-dim"
