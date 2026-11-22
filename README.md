@@ -38,8 +38,14 @@ version 1. Needs Popamp 1.0.0 or newer.
 
 ## Install
 
-Clone it into Popamp's skins folder and pick it in the main menu's skin
-list:
+With Popamp 1.0.0 or newer from [apt.popamp.app](https://apt.popamp.app):
+
+```sh
+sudo apt install popamp-skin-purple-glow
+```
+
+Then pick it in the main menu's skin list. Or clone it into Popamp's
+skins folder, where a copy of the same name wins over the package:
 
 ```sh
 git clone https://github.com/popamp/skin-purple-glow ~/.local/share/popamp/skins/purple-glow
