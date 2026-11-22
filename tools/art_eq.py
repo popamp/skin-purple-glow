@@ -1,5 +1,6 @@
 """The equalizer's sheets."""
-from parts import BOX, eq_thumb, lettered_button, letters, centred, level_colour, title_button, title_strip, well, window
+from parts import (BOX, NAME_INK, RIGHT_BUTTONS, eq_thumb, groove, lettered_button, letters, centred, level_colour, strip_ground,
+                   title_button, title_strip, well, window)
 
 NAME = "EQUALIZER"
 GRAPH = (85, 16, 115, 21)  # the graph's well round its 113 x 19 picture at 86, 17
@@ -106,10 +107,37 @@ def eqmain(p):
     graph(p)
 
 
+# The shaded strip's sliders, where Popamp puts them: the area each thumb runs in, and the
+# thumbs for the lower, middle and upper third of the range, 3 x 7 from row 30, with their glow
+SHADE_TRACKS = ((61, 97), (164, 42))  # volume, balance: x, width; 7 high from row 4
+SHADE_THUMBS = (((1, 4, 7), (0, 14, 27)), ((11, 14, 17), (27, 27, 27)))  # x of each, its level
+THUMB_W, THUMB_H, THUMB_Y, TRACK_Y = 3, 7, 30, 4
+
+
+def shade_strip(p, y, focused):
+    """The shaded equalizer's strip: the name at the left, the volume and balance grooves, the buttons."""
+    strip_ground(p, 0, y, 275, left=True, right=True, bottom=True)
+    letters(p, NAME, 8, y + 4, NAME_INK[focused])
+    for x, w in SHADE_TRACKS:
+        groove(p, x, y + TRACK_Y + 2, w)
+    for b in ("unshade", "close"):
+        title_button(p, 275 - RIGHT_BUTTONS[b], y + 3, b)
+
+
+def shade_thumb(p, x, level):
+    """A shaded slider's grey thumb under a line in the glow of its level."""
+    p.rect(x, THUMB_Y, THUMB_W, 1, level_colour(level))
+    p.rect(x, THUMB_Y + 1, THUMB_W, THUMB_H - 1, "steel-dark")
+    p.rect(x + 1, THUMB_Y + 2, THUMB_W - 2, THUMB_H - 3, "steel-mid")
+
+
 def eq_ex(p):
-    """The shaded equalizer: its title strip, focused and not, and the pressed buttons."""
+    """The shaded equalizer: its strip, focused and not, the sliders' thumbs and the pressed buttons."""
     p.rect(0, 0, 275, 82, "base")
     for y, focused in ((0, True), (15, False)):
-        title_strip(p, 0, y, 275, NAME, focused, ("unshade", "close"), shaded=True)
+        shade_strip(p, y, focused)
+    for xs, levels in SHADE_THUMBS:
+        for x, level in zip(xs, levels):
+            shade_thumb(p, x, level)
     title_button(p, 1, 38, "unshade", True)
     title_button(p, 11, 38, "close", True)
