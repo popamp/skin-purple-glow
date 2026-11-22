@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="307" height="10" viewBox="0 0 307 10">
+<defs>
+<linearGradient id="g0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff2cff" class="glow-stop"/><stop offset="1" stop-color="#5c0a68" class="glow-dim-stop"/></linearGradient>
+<linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffb0ff" class="glow-light-stop"/><stop offset="1" stop-color="#ff2cff" class="glow-stop"/></linearGradient>
+</defs>
+<rect x="0" y="0" width="307" height="10" fill="#06010a"/>
+<rect x="0" y="3" width="248" height="4" fill="#000000"/>
+<path d="M0 3h248v4h-248zM1 4v2h246v-2z" fill="#5c0a68" class="glow-dim"/>
+<rect x="1" y="4" width="246" height="2" fill="#5c0a68" class="glow-dim"/>
+<rect x="248" y="0" width="29" height="10" fill="url(#g0)"/>
+<path d="M248 0h29v10h-29zM249 1v8h27v-8z" fill="#ffb0ff" class="glow-light"/>
+<rect x="262" y="2" width="1" height="6" fill="#5c0a68" class="glow-dim"/>
+<rect x="278" y="0" width="29" height="10" fill="url(#g1)"/>
+<path d="M278 0h29v10h-29zM279 1v8h27v-8z" fill="#ffb0ff" class="glow-light"/>
+<rect x="292" y="2" width="1" height="6" fill="#5c0a68" class="glow-dim"/>
+</svg>

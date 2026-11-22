@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="136" height="36" viewBox="0 0 136 36">
+<defs>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1"/></filter>
+<linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#24032c" class="glow-deep-stop"/><stop offset="1" stop-color="#06010a"/></linearGradient>
+<linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5c0a68" class="glow-dim-stop"/><stop offset="1" stop-color="#24032c" class="glow-deep-stop"/></linearGradient>
+</defs>
+<rect x="0" y="0" width="136" height="36" fill="#000000"/>
+<rect x="1.5" y="1.5" width="20" height="15" rx="2.5" fill="none" stroke="#ff2cff" stroke-width="3" opacity="0.85" filter="url(#glow)" class="glow-stroke"/>
+<rect x="1.5" y="1.5" width="20" height="15" rx="2.5" fill="url(#g1)" stroke="#ff2cff" class="glow-stroke"/>
+<path d="M6 5h2v8h-2zM16 5L9 9L16 13Z" fill="#ff2cff" class="glow"/>
+<rect x="1.5" y="19.5" width="20" height="15" rx="2.5" fill="none" stroke="#ff2cff" stroke-width="3" opacity="1" filter="url(#glow)" class="glow-stroke"/>
+<rect x="1.5" y="19.5" width="20" height="15" rx="2.5" fill="url(#g2)" stroke="#ffb0ff" class="glow-light-stroke"/>
+<path d="M6 23h2v8h-2zM16 23L9 27L16 31Z" fill="#ff2cff" class="glow"/>
+<rect x="24.5" y="1.5" width="20" height="15" rx="2.5" fill="none" stroke="#ff2cff" stroke-width="3" opacity="0.85" filter="url(#glow)" class="glow-stroke"/>
+<rect x="24.5" y="1.5" width="20" height="15" rx="2.5" fill="url(#g1)" stroke="#ff2cff" class="glow-stroke"/>
+<path d="M31 5L38 9L31 13Z" fill="#ff2cff" class="glow"/>
+<rect x="24.5" y="19.5" width="20" height="15" rx="2.5" fill="none" stroke="#ff2cff" stroke-width="3" opacity="1" filter="url(#glow)" class="glow-stroke"/>
+<rect x="24.5" y="19.5" width="20" height="15" rx="2.5" fill="url(#g2)" stroke="#ffb0ff" class="glow-light-stroke"/>
+<path d="M31 23L38 27L31 31Z" fill="#ff2cff" class="glow"/>
+<rect x="47.5" y="1.5" width="20" height="15" rx="2.5" fill="none" stroke="#ff2cff" stroke-width="3" opacity="0.85" filter="url(#glow)" class="glow-stroke"/>
+<rect x="47.5" y="1.5" width="20" height="15" rx="2.5" fill="url(#g1)" stroke="#ff2cff" class="glow-stroke"/>
+<path d="M53 5h3v8h-3zM58 5h3v8h-3z" fill="#ff2cff" class="glow"/>
+<rect x="47.5" y="19.5" width="20" height="15" rx="2.5" fill="none" stroke="#ff2cff" stroke-width="3" opacity="1" filter="url(#glow)" class="glow-stroke"/>
+<rect x="47.5" y="19.5" width="20" height="15" rx="2.5" fill="url(#g2)" stroke="#ffb0ff" class="glow-light-stroke"/>
+<path d="M53 23h3v8h-3zM58 23h3v8h-3z" fill="#ff2cff" class="glow"/>
+<rect x="70.5" y="1.5" width="20" height="15" rx="2.5" fill="none" stroke="#ff2cff" stroke-width="3" opacity="0.85" filter="url(#glow)" class="glow-stroke"/>
+<rect x="70.5" y="1.5" width="20" height="15" rx="2.5" fill="url(#g1)" stroke="#ff2cff" class="glow-stroke"/>
+<path d="M76 5h8v8h-8z" fill="#ff2cff" class="glow"/>
+<rect x="70.5" y="19.5" width="20" height="15" rx="2.5" fill="none" stroke="#ff2cff" stroke-width="3" opacity="1" filter="url(#glow)" class="glow-stroke"/>
+<rect x="70.5" y="19.5" width="20" height="15" rx="2.5" fill="url(#g2)" stroke="#ffb0ff" class="glow-light-stroke"/>
+<path d="M76 23h8v8h-8z" fill="#ff2cff" class="glow"/>
+<rect x="93.5" y="1.5" width="19" height="15" rx="2.5" fill="none" stroke="#ff2cff" stroke-width="3" opacity="0.85" filter="url(#glow)" class="glow-stroke"/>
+<rect x="93.5" y="1.5" width="19" height="15" rx="2.5" fill="url(#g1)" stroke="#ff2cff" class="glow-stroke"/>
+<path d="M98 5L105 9L98 13ZM106 5h2v8h-2z" fill="#ff2cff" class="glow"/>
+<rect x="93.5" y="19.5" width="19" height="15" rx="2.5" fill="none" stroke="#ff2cff" stroke-width="3" opacity="1" filter="url(#glow)" class="glow-stroke"/>
+<rect x="93.5" y="19.5" width="19" height="15" rx="2.5" fill="url(#g2)" stroke="#ffb0ff" class="glow-light-stroke"/>
+<path d="M98 23L105 27L98 31ZM106 23h2v8h-2z" fill="#ff2cff" class="glow"/>
+<rect x="115.5" y="1.5" width="19" height="13" rx="2.5" fill="none" stroke="#ff2cff" stroke-width="3" opacity="0.85" filter="url(#glow)" class="glow-stroke"/>
+<rect x="115.5" y="1.5" width="19" height="13" rx="2.5" fill="url(#g1)" stroke="#ff2cff" class="glow-stroke"/>
+<path d="M120 9L125 4L130 9ZM120 10h10v2h-10z" fill="#ff2cff" class="glow"/>
+<rect x="115.5" y="17.5" width="19" height="13" rx="2.5" fill="none" stroke="#ff2cff" stroke-width="3" opacity="1" filter="url(#glow)" class="glow-stroke"/>
+<rect x="115.5" y="17.5" width="19" height="13" rx="2.5" fill="url(#g2)" stroke="#ffb0ff" class="glow-light-stroke"/>
+<path d="M120 25L125 20L130 25ZM120 26h10v2h-10z" fill="#ff2cff" class="glow"/>
+</svg>
