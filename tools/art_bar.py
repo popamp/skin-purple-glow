@@ -6,7 +6,7 @@ and PL buttons are the main window's own sprites; Main Menu and Close, Shuffle a
 drawn here again from the same parts, a pixel taller or shorter. windows.py lays them out.
 """
 from art_main import FRAMES, STATES, track
-from parts import lettered_button, thumb, title_button, well
+from parts import groove, lettered_button, thumb, title_button, well
 
 BAR_H = 22
 # The bar's fixed ends (the middle, the title's, is tiled) and the narrowest bar
@@ -43,7 +43,7 @@ def left(p):
 def mid(p):
     panel(p, 8)
     display(p, 0, 8)
-    p.rect(0, THUMB_TOP + GROOVE_ROW - 1, 8, 2, "glow-dim")
+    groove(p, 0, THUMB_TOP + GROOVE_ROW - 1, 8)
 
 
 def right(p):
@@ -54,7 +54,7 @@ def right(p):
 # controls.svg: Main Menu and Close, normal over pressed; Shuffle and Repeat in their four states; the volume
 BOX = 12
 TOGGLE_H, SHUFFLE, REPEAT = 16, (2 * BOX, 47), (2 * BOX + 47, 28)
-VOLUME_W, VOLUME_H, VOLUME_WELL = 68, 14, 4
+VOLUME_W, VOLUME_H = 68, 14
 VOLUME_TOP = len(STATES) * TOGGLE_H
 VOLUME_THUMB = (VOLUME_TOP + FRAMES * VOLUME_H, 14, 12)  # its row, width and height: normal at 15, pressed at 0
 CONTROLS_W = REPEAT[0] + REPEAT[1]
@@ -69,10 +69,10 @@ def controls(p):
         for (x, w), word in ((SHUFFLE, "SHUFFLE"), (REPEAT, "REP")):
             lettered_button(p, x, TOGGLE_H * row, w, TOGGLE_H, word, pressed, on)
     for k in range(FRAMES):
-        track(p, 0, VOLUME_TOP + VOLUME_H * k, VOLUME_W, k, h=VOLUME_H, well_h=VOLUME_WELL)
+        track(p, 0, VOLUME_TOP + VOLUME_H * k, VOLUME_W, h=VOLUME_H)
     y, w, h = VOLUME_THUMB
-    thumb(p, 15, y, w, h)
-    thumb(p, 0, y, w, h, True)
+    thumb(p, 15, y, w, h, left=True)
+    thumb(p, 0, y, w, h, True, left=True)
 
 
 PICTURES = {"left": (BAR_LEFT, BAR_H, left), "mid": (8, BAR_H, mid), "right": (BAR_RIGHT, BAR_H, right),

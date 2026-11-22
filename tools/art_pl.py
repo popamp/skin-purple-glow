@@ -146,7 +146,7 @@ def shade_pieces(p):
 def menu_item(p, x, y, words, pressed):
     button(p, x, y, 22, 18, pressed)
     d = 1 if pressed else 0
-    ink = "glow-mid" if pressed else "glow"
+    ink = "ink-light" if pressed else "ink"
     top, bottom = words
     if not bottom:
         centred(p, top, x + d, y + 6 + d, 22, ink)
@@ -176,8 +176,8 @@ def pledit(p):
     right_tile(p)
     title_button(p, 52, 42, "close", True)
     title_button(p, 62, 42, "shade", True)
-    thumb(p, 52, 53, 8, 18, grip="h")
-    thumb(p, 61, 53, 8, 18, True, grip="h")
+    thumb(p, 52, 53, 8, 18, upright=True)
+    thumb(p, 61, 53, 8, 18, True, upright=True)
     shade_pieces(p)
     bottom_left(p)
     bottom_right(p)

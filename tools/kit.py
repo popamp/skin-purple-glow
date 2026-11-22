@@ -13,15 +13,21 @@ GLOW = {
     "glow-mid": "#b01cc0",  # labels, an unfocused window's lines
     "glow-dim": "#5c0a68",  # the wells' frames, unlit lettering
     "glow-deep": "#24032c",  # faint fills: a button's face, the graph's grid
-    "thumb": "#5a70ff",  # the equalizer's thumbs
-    "thumb-light": "#b8c4ff",
-    "thumb-dark": "#1c2a9a",
+    "ink": "#2a8cff",  # the lettering and the buttons' signs, blue against the glow
+    "ink-light": "#a8d4ff",  # pressed
+    "ink-dim": "#14427e",  # unlit
+    "thumb": "#1a5cff",  # the equalizer's thumbs
+    "thumb-light": "#6c9cff",
+    "thumb-dark": "#082a8c",
 }
 FIXED = {
     "lcd": "#000000",  # the display's ground
     "body": "#06010a",  # the windows' panel
     "title": "#0e0a13",  # the title strips: flat, a shade lighter than the panel
     "base": "#000000",  # the sheets' spare room
+    "steel": "#9a9a9a",  # the grey sliders: their light line
+    "steel-mid": "#5e5e5e",
+    "steel-dark": "#303030",
 }
 
 FIRST_SET = "Purple"
@@ -100,6 +106,9 @@ class Picture:
             self.defs.append('<filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1"/></filter>')
         self.body.append(f'<rect x="{x + 0.5}" y="{y + 0.5}" width="{w - 1}" height="{h - 1}" rx="{r}" fill="none" stroke="{colour(role)[0]}" '
                          f'stroke-width="3" opacity="{strength}" filter="url(#glow)"{suffixed(role, "stroke")}/>')
+
+    def ellipse(self, cx, cy, rx, ry, paint):
+        self.body.append(f'<ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{ry}" {self.paint(paint)}/>')
 
     def line(self, d, role, width=1):
         """A stroked outline, for the few shapes that are lines."""

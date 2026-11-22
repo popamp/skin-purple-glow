@@ -1,5 +1,5 @@
 """The equalizer's sheets."""
-from parts import BOX, lettered_button, letters, centred, level_colour, thumb, title_button, title_strip, well, window
+from parts import BOX, eq_thumb, lettered_button, letters, centred, level_colour, title_button, title_strip, well, window
 
 NAME = "EQUALIZER"
 GRAPH = (85, 16, 115, 21)  # the graph's well round its 113 x 19 picture at 86, 17
@@ -16,16 +16,36 @@ def eq_window(p):
     title_strip(p, 0, 0, 275, NAME, True)
     well(p, *GRAPH)
     for x, text in zip(BANDS, FREQUENCIES):
-        centred(p, text, x - 3, 104, FRAME_W + 6, "glow-mid")
+        centred(p, text, x - 3, 104, FRAME_W + 6, "ink")
     for text, y in SCALE:
-        letters(p, text, 58 - len(text) * 5, y, "glow-mid")
+        letters(p, text, 58 - len(text) * 5, y, "ink")
+
+
+RAILS = (4, 9)  # a slider's two rails, from its left
+THUMB = 11
+CAP = 3  # how far down (and up) a rail's end flares into its little triangle
+
+
+def rails(x, y):
+    """A slider's two glowing rails, each flaring at both ends into a small triangle, as one outline."""
+    d = ""
+    for r in RAILS:
+        rx = x + r
+        d += f"M{rx} {y + CAP}h1V{y + FRAME_H - CAP}h-1z"
+        d += f"M{rx - 2} {y}h5v1h-1v1h-1v1h-1v-1h-1v-1h-1z"  # rows 5, 3 and 1 wide: a triangle in whole pixels
+        d += f"M{rx - 2} {y + FRAME_H}h5v-1h-1v-1h-1v-1h-1v1h-1v1h-1z"
+    return d
 
 
 def slider_frame(p, x, y, k):
-    """One frame of a band's slider: its lit groove."""
+    """One frame of a band's slider, `k` from 0 at the bottom to 27 at the top: the rails, and between them
+    under the thumb's middle the level, lit."""
     p.rect(x, y, FRAME_W, FRAME_H + 1, "body")
-    well(p, x + 5, y, 4, FRAME_H)
-    p.rect(x + 6, y + 1, 2, FRAME_H - 2, "glow")
+    middle = y + round((27 - k) * (FRAME_H - THUMB) / 27) + THUMB // 2
+    left, right = RAILS
+    p.rect(x + left + 1, middle, right - left - 1, y + FRAME_H - CAP - middle, "glow-mid")
+    p.rect(x + left + 2, middle, right - left - 3, y + FRAME_H - CAP - middle, "glow-dim")
+    p.path(rails(x, y), "glow")
 
 
 def graph(p):
@@ -49,8 +69,8 @@ def eqmain(p):
     title_strip(p, 0, 149, 275, NAME, False)
     for k in range(28):
         slider_frame(p, 13 + (k % 14) * 15, 164 + (k // 14) * 65, k)
-    thumb(p, 0, 164, 11, 11, grip="h", blue=True)
-    thumb(p, 0, 176, 11, 11, True, grip="h", blue=True)
+    eq_thumb(p, 0, 164)
+    eq_thumb(p, 0, 176, True)
     lettered_button(p, 224, 164, 44, 12, "PRESETS")
     lettered_button(p, 224, 176, 44, 12, "PRESETS", True)
     graph(p)

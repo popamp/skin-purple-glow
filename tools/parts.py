@@ -104,7 +104,8 @@ def press(pressed):
 
 
 def ink(pressed):
-    return "glow-light" if pressed else "glow"
+    """The colour of what is on a button: blue, lighter when pressed."""
+    return "ink-light" if pressed else "ink"
 
 
 def lamp(p, x, y, on):
@@ -119,7 +120,7 @@ def lettered_button(p, x, y, w, h, text, pressed=False, lit=None):
         centred(p, text, x, top, w, ink(pressed))
         return
     lamp(p, x + 4, top + 2, lit)
-    centred(p, text, x + 7, top, w - 7, ink(pressed) if lit else "glow-mid")
+    centred(p, text, x + 7, top, w - 7, ink(pressed) if lit else "ink-dim")
 
 
 # --- the title strip and its buttons ------------------------------------------------------------------
@@ -127,7 +128,7 @@ def lettered_button(p, x, y, w, h, text, pressed=False, lit=None):
 TITLE_H = 14
 BOX = 9  # a title button
 # focused or not: the edge, the name
-STRIP = {True: ("glow", "glow"), False: ("glow-mid", "glow-mid")}
+STRIP = {True: ("glow", "ink"), False: ("glow-mid", "ink-dim")}
 # A title button's glyph as rectangles in its 9 x 9 box (Main Menu's and Close's are drawn to any size)
 GLYPHS = {
     "min": ((2, 5, 5, 1),),
@@ -190,21 +191,37 @@ def title_strip(p, x, y, w, name, focused, buttons=("shade", "close"), menu=Fals
         title_button(p, x + w - RIGHT_BUTTONS[b], y + 3, b)
 
 
-# --- thumbs -------------------------------------------------------------------------------------------
-
-# pink (the main window's and the playlist's) or blue (the equalizer's): light, main, dark
-THUMBS = {False: ("glow-light", "glow", "glow-dim"), True: ("thumb-light", "thumb", "thumb-dark")}
+# --- sliders ------------------------------------------------------------------------------------------
 
 
-def thumb(p, x, y, w, h, pressed=False, grip="v", blue=False):
-    """A slider's thumb, lit from the top, with a grip line across its middle (`v` upright, `h` lying)."""
-    light, main, dark = THUMBS[blue]
-    p.rect(x, y, w, h, Gradient(light, main) if pressed else Gradient(main, dark))
-    frame(p, x, y, w, h, light)
-    if grip == "v":
-        p.rect(x + w // 2, y + 2, 1, h - 4, dark)
-    else:
-        p.rect(x + 2, y + h // 2, w - 4, 1, dark)
+def groove(p, x, y, w):
+    """A grey slider's groove: a dark line with a lighter one along its middle, three pixels high."""
+    p.rect(x, y, w, 3, "steel-dark")
+    p.rect(x, y + 1, w, 1, "steel-mid")
+
+
+def thumb(p, x, y, w, h, pressed=False, upright=False, left=False):
+    """A grey slider's thumb under a glowing line along its top (and its left side when `left`): a dark frame
+    round a grey face with a light line along it, lying or, on an `upright` slider's thumb, standing."""
+    p.rect(x, y, w, 1, "glow-light" if pressed else "glow")
+    if left:
+        p.rect(x, y, 1, h, "glow-light" if pressed else "glow")
+    bx, by = x + left, y + 2
+    bw, bh = w - left, h - 2
+    p.rect(bx, by, bw, bh, "steel-dark")
+    p.rect(bx + 1, by + 1, bw - 2, bh - 2, "steel" if pressed else "steel-mid")
+    if not upright and bh > 4:
+        p.rect(bx + 2, by + bh // 2, bw - 4, 1, "steel-dark" if pressed else "steel")
+    elif bw > 4:
+        p.rect(bx + bw // 2, by + 2, 1, bh - 4, "steel-dark" if pressed else "steel")
+
+
+def eq_thumb(p, x, y, pressed=False):
+    """The equalizer's 11 x 11 thumb: two blue triangles facing each other across its middle, their slanting
+    sides curved in, and a light round between their points."""
+    p.path(f"M{x + 0.5} {y + 1}Q{x + 5.5} {y + 8} {x + 10.5} {y + 1}V{y + 10}Q{x + 5.5} {y + 3} {x + 0.5} {y + 10}Z",
+           Gradient("thumb-light", "thumb") if pressed else Gradient("thumb", "thumb-dark"))
+    p.ellipse(x + 5.5, y + 5.5, 1.5, 2.5, "ink-light" if pressed else "thumb-light")
 
 
 def level_colour(k, n=27):

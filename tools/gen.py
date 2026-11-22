@@ -47,7 +47,7 @@ format_version = 1
 min_popamp = "1.0.0"
 """
 
-PLAYLIST = {"normal": "#d8ccff", "current": "glow-light", "normal_bg": "#000000", "selected_bg": "glow-dim"}
+PLAYLIST = {"normal": "ink-light", "current": "glow-light", "normal_bg": "#000000", "selected_bg": "glow-dim"}
 
 # Background, background dots, 16 spectrum colours from the top of a bar down, 5 oscilloscope colours, the peak dots.
 VIS = ["#000000", "glow-deep", *["glow-light"] * 4, *["glow"] * 6, *["glow-mid"] * 6,

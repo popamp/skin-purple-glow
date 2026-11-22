@@ -1,5 +1,6 @@
 """The main window's sheets."""
-from parts import (BOX, CELL_H, button, centred, letters, lettered_button, level_colour, press, rule, thumb, title_button, title_strip,
+from parts import ink as ink_of
+from parts import (BOX, CELL_H, button, centred, groove, letters, lettered_button, press, rule, thumb, title_button, title_strip,
                    strip_ground, well, window)
 
 NAME = "POPAMP"
@@ -38,8 +39,8 @@ def main(p):
         p.rect(x, y, 2, 2, "glow")
     for w in (MARQUEE, KBPS, KHZ, MONOSTER):
         well(p, *w)
-    letters(p, "KBPS", KBPS[0] + KBPS[2] + 1, 43, "glow-mid")
-    letters(p, "KHZ", KHZ[0] + KHZ[2] + 1, 43, "glow-mid")
+    letters(p, "KBPS", KBPS[0] + KBPS[2] + 1, 43, "ink")
+    letters(p, "KHZ", KHZ[0] + KHZ[2] + 1, 43, "ink")
     for y in RULES:
         rule(p, 8, y, 260)
     logo(p, *LOGO)
@@ -76,10 +77,10 @@ def transport_glyph(name, x, y, h=8):
     return shapes[name]
 
 
-def sign(p, name, x, y, w, h, size):
+def sign(p, name, x, y, w, h, size, ink="ink"):
     """A transport sign `size` high in the middle of the `w` x `h` box at `x`, `y`."""
     _, gw = transport_glyph(name, 0, 0, size)
-    p.path(transport_glyph(name, x + (w - gw) // 2, y + (h - size) // 2, size)[0], "glow")
+    p.path(transport_glyph(name, x + (w - gw) // 2, y + (h - size) // 2, size)[0], ink)
 
 
 def cbuttons(p):
@@ -88,11 +89,11 @@ def cbuttons(p):
         for y, pressed in ((0, False), (18, True)):
             button(p, x, y, w, 18, pressed)
             d = press(pressed)
-            sign(p, name, x + d, y + d, w, 18, 8)
+            sign(p, name, x + d, y + d, w, 18, 8, ink_of(pressed))
     for y, pressed in ((0, False), (16, True)):
         button(p, 114, y, 22, 16, pressed)
         d = press(pressed)
-        sign(p, "eject", 114 + d, y + d, 22, 16, 8)
+        sign(p, "eject", 114 + d, y + d, 22, 16, 8, ink_of(pressed))
 
 
 # --- shufrep.svg: repeat, shuffle, EQ and PL ----------------------------------------------------------
@@ -135,9 +136,9 @@ def loose_buttons(p):
 
 
 def shade_pos(p, x, y):
-    """The shaded window's little position bar: a groove in a well."""
-    well(p, x, y, 17, 7)
-    p.rect(x + 1, y + 3, 15, 1, "glow-dim")
+    """The shaded window's little position bar: a grey groove."""
+    p.rect(x, y, 17, 7, "body")
+    groove(p, x, y + 2, 17)
 
 
 def mini_transport(p, x, y, w, h, eject=True):
@@ -152,7 +153,7 @@ def mini_transport(p, x, y, w, h, eject=True):
 def shade_strip(p, y, focused):
     strip_ground(p, X0, y, 275, focused, left=True, right=True, bottom=True)
     title_button(p, X0 + 6, y + 3, "menu")
-    letters(p, NAME, X0 + 20, y + 4, "glow" if focused else "glow-mid")
+    letters(p, NAME, X0 + 20, y + 4, "ink" if focused else "ink-dim")
     well(p, X0 + SHADE_TIME[0], y + SHADE_TIME[1], *SHADE_TIME[2:])
     p.rect(X0 + 144, y + 5, 1, 1, "glow")
     p.rect(X0 + 144, y + 7, 1, 1, "glow")
@@ -163,7 +164,7 @@ def shade_strip(p, y, focused):
 
 
 def clutter_letter(p, x, y, i, lit):
-    centred(p, CLUTTER[i], x, y, 8, "glow" if lit else "glow-dim")
+    centred(p, CLUTTER[i], x, y, 8, "ink" if lit else "ink-dim")
 
 
 def clutterbar(p):
@@ -190,8 +191,7 @@ def titlebar(p):
 
 def posbar(p):
     p.rect(0, 0, 307, 10, "body")
-    well(p, 0, 3, 248, 4)
-    p.rect(1, 4, 246, 2, "glow-dim")
+    groove(p, 0, 4, 248)
     thumb(p, 248, 0, 29, 10)
     thumb(p, 278, 0, 29, 10, True)
 
@@ -199,34 +199,26 @@ def posbar(p):
 FRAMES, STEP = 28, 15
 
 
-def track(p, x, y, w, k, centre=False, h=13, well_h=5):
-    """One frame of the volume or balance track: a well across its middle with the level in it, from the left or from the middle."""
+def track(p, x, y, w, h=13):
+    """One frame of the volume or balance track: a grey groove across its middle, the same at every level."""
     p.rect(x, y, w, h, "body")
-    top = y + (h - well_h) // 2
-    well(p, x, top, w, well_h)
-    inside = w - 2
-    n = round(inside * k / (FRAMES - 1))
-    if centre:
-        n = round(inside * k / (FRAMES - 1) / 2) * 2
-        p.rect(x + 1 + (inside - n) // 2, top + 1, n, well_h - 2, level_colour(k))
-    else:
-        p.rect(x + 1, top + 1, n, well_h - 2, level_colour(k))
+    groove(p, x, y + (h - 3) // 2 + 1, w)
 
 
-def slider_sheet(p, x, w, centre):
+def slider_sheet(p, x, w):
     p.rect(0, 0, 68, 433, "base")
     for k in range(FRAMES):
-        track(p, x, STEP * k, w, k, centre)
-    thumb(p, 15, 422, 14, 11)
-    thumb(p, 0, 422, 14, 11, True)
+        track(p, x, STEP * k, w)
+    thumb(p, 15, 422, 14, 11, left=True)
+    thumb(p, 0, 422, 14, 11, True, left=True)
 
 
 def volume(p):
-    slider_sheet(p, 0, 68, False)
+    slider_sheet(p, 0, 68)
 
 
 def balance(p):
-    slider_sheet(p, 9, 38, True)
+    slider_sheet(p, 9, 38)
 
 
 # --- the display's indicators --------------------------------------------------------------------------
@@ -235,7 +227,7 @@ def balance(p):
 def monoster(p):
     p.rect(0, 0, 58, 24, "lcd")
     for y, lit in ((0, True), (12, False)):
-        ink = "glow" if lit else "glow-dim"
+        ink = "ink" if lit else "ink-dim"
         centred(p, "STEREO", 0, y + 3, 29, ink)
         centred(p, "MONO", 29, y + 3, 27, ink)
 

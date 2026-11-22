@@ -1,124 +1,97 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="68" height="433" viewBox="0 0 68 433">
-<defs>
-<linearGradient id="g0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff2cff" class="glow-stop"/><stop offset="1" stop-color="#5c0a68" class="glow-dim-stop"/></linearGradient>
-<linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffb0ff" class="glow-light-stop"/><stop offset="1" stop-color="#ff2cff" class="glow-stop"/></linearGradient>
-</defs>
 <rect x="0" y="0" width="68" height="433" fill="#000000"/>
 <rect x="0" y="0" width="68" height="13" fill="#06010a"/>
-<rect x="0" y="4" width="68" height="5" fill="#000000"/>
-<path d="M0 4h68v5h-68zM1 5v3h66v-3z" fill="#5c0a68" class="glow-dim"/>
+<rect x="0" y="6" width="68" height="3" fill="#303030"/>
+<rect x="0" y="7" width="68" height="1" fill="#5e5e5e"/>
 <rect x="0" y="15" width="68" height="13" fill="#06010a"/>
-<rect x="0" y="19" width="68" height="5" fill="#000000"/>
-<path d="M0 19h68v5h-68zM1 20v3h66v-3z" fill="#5c0a68" class="glow-dim"/>
-<rect x="1" y="20" width="2" height="3" fill="#b01cc0" class="glow-mid"/>
+<rect x="0" y="21" width="68" height="3" fill="#303030"/>
+<rect x="0" y="22" width="68" height="1" fill="#5e5e5e"/>
 <rect x="0" y="30" width="68" height="13" fill="#06010a"/>
-<rect x="0" y="34" width="68" height="5" fill="#000000"/>
-<path d="M0 34h68v5h-68zM1 35v3h66v-3z" fill="#5c0a68" class="glow-dim"/>
-<rect x="1" y="35" width="5" height="3" fill="#b01cc0" class="glow-mid"/>
+<rect x="0" y="36" width="68" height="3" fill="#303030"/>
+<rect x="0" y="37" width="68" height="1" fill="#5e5e5e"/>
 <rect x="0" y="45" width="68" height="13" fill="#06010a"/>
-<rect x="0" y="49" width="68" height="5" fill="#000000"/>
-<path d="M0 49h68v5h-68zM1 50v3h66v-3z" fill="#5c0a68" class="glow-dim"/>
-<rect x="1" y="50" width="7" height="3" fill="#b01cc0" class="glow-mid"/>
+<rect x="0" y="51" width="68" height="3" fill="#303030"/>
+<rect x="0" y="52" width="68" height="1" fill="#5e5e5e"/>
 <rect x="0" y="60" width="68" height="13" fill="#06010a"/>
-<rect x="0" y="64" width="68" height="5" fill="#000000"/>
-<path d="M0 64h68v5h-68zM1 65v3h66v-3z" fill="#5c0a68" class="glow-dim"/>
-<rect x="1" y="65" width="10" height="3" fill="#b01cc0" class="glow-mid"/>
+<rect x="0" y="66" width="68" height="3" fill="#303030"/>
+<rect x="0" y="67" width="68" height="1" fill="#5e5e5e"/>
 <rect x="0" y="75" width="68" height="13" fill="#06010a"/>
-<rect x="0" y="79" width="68" height="5" fill="#000000"/>
-<path d="M0 79h68v5h-68zM1 80v3h66v-3z" fill="#5c0a68" class="glow-dim"/>
-<rect x="1" y="80" width="12" height="3" fill="#b01cc0" class="glow-mid"/>
+<rect x="0" y="81" width="68" height="3" fill="#303030"/>
+<rect x="0" y="82" width="68" height="1" fill="#5e5e5e"/>
 <rect x="0" y="90" width="68" height="13" fill="#06010a"/>
-<rect x="0" y="94" width="68" height="5" fill="#000000"/>
-<path d="M0 94h68v5h-68zM1 95v3h66v-3z" fill="#5c0a68" class="glow-dim"/>
-<rect x="1" y="95" width="15" height="3" fill="#b01cc0" class="glow-mid"/>
+<rect x="0" y="96" width="68" height="3" fill="#303030"/>
+<rect x="0" y="97" width="68" height="1" fill="#5e5e5e"/>
 <rect x="0" y="105" width="68" height="13" fill="#06010a"/>
-<rect x="0" y="109" width="68" height="5" fill="#000000"/>
-<path d="M0 109h68v5h-68zM1 110v3h66v-3z" fill="#5c0a68" class="glow-dim"/>
-<rect x="1" y="110" width="17" height="3" fill="#b01cc0" class="glow-mid"/>
+<rect x="0" y="111" width="68" height="3" fill="#303030"/>
+<rect x="0" y="112" width="68" height="1" fill="#5e5e5e"/>
 <rect x="0" y="120" width="68" height="13" fill="#06010a"/>
-<rect x="0" y="124" width="68" height="5" fill="#000000"/>
-<path d="M0 124h68v5h-68zM1 125v3h66v-3z" fill="#5c0a68" class="glow-dim"/>
-<rect x="1" y="125" width="20" height="3" fill="#b01cc0" class="glow-mid"/>
+<rect x="0" y="126" width="68" height="3" fill="#303030"/>
+<rect x="0" y="127" width="68" height="1" fill="#5e5e5e"/>
 <rect x="0" y="135" width="68" height="13" fill="#06010a"/>
-<rect x="0" y="139" width="68" height="5" fill="#000000"/>
-<path d="M0 139h68v5h-68zM1 140v3h66v-3z" fill="#5c0a68" class="glow-dim"/>
-<rect x="1" y="140" width="22" height="3" fill="#b01cc0" class="glow-mid"/>
+<rect x="0" y="141" width="68" height="3" fill="#303030"/>
+<rect x="0" y="142" width="68" height="1" fill="#5e5e5e"/>
 <rect x="0" y="150" width="68" height="13" fill="#06010a"/>
-<rect x="0" y="154" width="68" height="5" fill="#000000"/>
-<path d="M0 154h68v5h-68zM1 155v3h66v-3z" fill="#5c0a68" class="glow-dim"/>
-<rect x="1" y="155" width="24" height="3" fill="#ff2cff" class="glow"/>
+<rect x="0" y="156" width="68" height="3" fill="#303030"/>
+<rect x="0" y="157" width="68" height="1" fill="#5e5e5e"/>
 <rect x="0" y="165" width="68" height="13" fill="#06010a"/>
-<rect x="0" y="169" width="68" height="5" fill="#000000"/>
-<path d="M0 169h68v5h-68zM1 170v3h66v-3z" fill="#5c0a68" class="glow-dim"/>
-<rect x="1" y="170" width="27" height="3" fill="#ff2cff" class="glow"/>
+<rect x="0" y="171" width="68" height="3" fill="#303030"/>
+<rect x="0" y="172" width="68" height="1" fill="#5e5e5e"/>
 <rect x="0" y="180" width="68" height="13" fill="#06010a"/>
-<rect x="0" y="184" width="68" height="5" fill="#000000"/>
-<path d="M0 184h68v5h-68zM1 185v3h66v-3z" fill="#5c0a68" class="glow-dim"/>
-<rect x="1" y="185" width="29" height="3" fill="#ff2cff" class="glow"/>
+<rect x="0" y="186" width="68" height="3" fill="#303030"/>
+<rect x="0" y="187" width="68" height="1" fill="#5e5e5e"/>
 <rect x="0" y="195" width="68" height="13" fill="#06010a"/>
-<rect x="0" y="199" width="68" height="5" fill="#000000"/>
-<path d="M0 199h68v5h-68zM1 200v3h66v-3z" fill="#5c0a68" class="glow-dim"/>
-<rect x="1" y="200" width="32" height="3" fill="#ff2cff" class="glow"/>
+<rect x="0" y="201" width="68" height="3" fill="#303030"/>
+<rect x="0" y="202" width="68" height="1" fill="#5e5e5e"/>
 <rect x="0" y="210" width="68" height="13" fill="#06010a"/>
-<rect x="0" y="214" width="68" height="5" fill="#000000"/>
-<path d="M0 214h68v5h-68zM1 215v3h66v-3z" fill="#5c0a68" class="glow-dim"/>
-<rect x="1" y="215" width="34" height="3" fill="#ff2cff" class="glow"/>
+<rect x="0" y="216" width="68" height="3" fill="#303030"/>
+<rect x="0" y="217" width="68" height="1" fill="#5e5e5e"/>
 <rect x="0" y="225" width="68" height="13" fill="#06010a"/>
-<rect x="0" y="229" width="68" height="5" fill="#000000"/>
-<path d="M0 229h68v5h-68zM1 230v3h66v-3z" fill="#5c0a68" class="glow-dim"/>
-<rect x="1" y="230" width="37" height="3" fill="#ff2cff" class="glow"/>
+<rect x="0" y="231" width="68" height="3" fill="#303030"/>
+<rect x="0" y="232" width="68" height="1" fill="#5e5e5e"/>
 <rect x="0" y="240" width="68" height="13" fill="#06010a"/>
-<rect x="0" y="244" width="68" height="5" fill="#000000"/>
-<path d="M0 244h68v5h-68zM1 245v3h66v-3z" fill="#5c0a68" class="glow-dim"/>
-<rect x="1" y="245" width="39" height="3" fill="#ff2cff" class="glow"/>
+<rect x="0" y="246" width="68" height="3" fill="#303030"/>
+<rect x="0" y="247" width="68" height="1" fill="#5e5e5e"/>
 <rect x="0" y="255" width="68" height="13" fill="#06010a"/>
-<rect x="0" y="259" width="68" height="5" fill="#000000"/>
-<path d="M0 259h68v5h-68zM1 260v3h66v-3z" fill="#5c0a68" class="glow-dim"/>
-<rect x="1" y="260" width="42" height="3" fill="#ff2cff" class="glow"/>
+<rect x="0" y="261" width="68" height="3" fill="#303030"/>
+<rect x="0" y="262" width="68" height="1" fill="#5e5e5e"/>
 <rect x="0" y="270" width="68" height="13" fill="#06010a"/>
-<rect x="0" y="274" width="68" height="5" fill="#000000"/>
-<path d="M0 274h68v5h-68zM1 275v3h66v-3z" fill="#5c0a68" class="glow-dim"/>
-<rect x="1" y="275" width="44" height="3" fill="#ff2cff" class="glow"/>
+<rect x="0" y="276" width="68" height="3" fill="#303030"/>
+<rect x="0" y="277" width="68" height="1" fill="#5e5e5e"/>
 <rect x="0" y="285" width="68" height="13" fill="#06010a"/>
-<rect x="0" y="289" width="68" height="5" fill="#000000"/>
-<path d="M0 289h68v5h-68zM1 290v3h66v-3z" fill="#5c0a68" class="glow-dim"/>
-<rect x="1" y="290" width="46" height="3" fill="#ffb0ff" class="glow-light"/>
+<rect x="0" y="291" width="68" height="3" fill="#303030"/>
+<rect x="0" y="292" width="68" height="1" fill="#5e5e5e"/>
 <rect x="0" y="300" width="68" height="13" fill="#06010a"/>
-<rect x="0" y="304" width="68" height="5" fill="#000000"/>
-<path d="M0 304h68v5h-68zM1 305v3h66v-3z" fill="#5c0a68" class="glow-dim"/>
-<rect x="1" y="305" width="49" height="3" fill="#ffb0ff" class="glow-light"/>
+<rect x="0" y="306" width="68" height="3" fill="#303030"/>
+<rect x="0" y="307" width="68" height="1" fill="#5e5e5e"/>
 <rect x="0" y="315" width="68" height="13" fill="#06010a"/>
-<rect x="0" y="319" width="68" height="5" fill="#000000"/>
-<path d="M0 319h68v5h-68zM1 320v3h66v-3z" fill="#5c0a68" class="glow-dim"/>
-<rect x="1" y="320" width="51" height="3" fill="#ffb0ff" class="glow-light"/>
+<rect x="0" y="321" width="68" height="3" fill="#303030"/>
+<rect x="0" y="322" width="68" height="1" fill="#5e5e5e"/>
 <rect x="0" y="330" width="68" height="13" fill="#06010a"/>
-<rect x="0" y="334" width="68" height="5" fill="#000000"/>
-<path d="M0 334h68v5h-68zM1 335v3h66v-3z" fill="#5c0a68" class="glow-dim"/>
-<rect x="1" y="335" width="54" height="3" fill="#ffb0ff" class="glow-light"/>
+<rect x="0" y="336" width="68" height="3" fill="#303030"/>
+<rect x="0" y="337" width="68" height="1" fill="#5e5e5e"/>
 <rect x="0" y="345" width="68" height="13" fill="#06010a"/>
-<rect x="0" y="349" width="68" height="5" fill="#000000"/>
-<path d="M0 349h68v5h-68zM1 350v3h66v-3z" fill="#5c0a68" class="glow-dim"/>
-<rect x="1" y="350" width="56" height="3" fill="#ffb0ff" class="glow-light"/>
+<rect x="0" y="351" width="68" height="3" fill="#303030"/>
+<rect x="0" y="352" width="68" height="1" fill="#5e5e5e"/>
 <rect x="0" y="360" width="68" height="13" fill="#06010a"/>
-<rect x="0" y="364" width="68" height="5" fill="#000000"/>
-<path d="M0 364h68v5h-68zM1 365v3h66v-3z" fill="#5c0a68" class="glow-dim"/>
-<rect x="1" y="365" width="59" height="3" fill="#ffb0ff" class="glow-light"/>
+<rect x="0" y="366" width="68" height="3" fill="#303030"/>
+<rect x="0" y="367" width="68" height="1" fill="#5e5e5e"/>
 <rect x="0" y="375" width="68" height="13" fill="#06010a"/>
-<rect x="0" y="379" width="68" height="5" fill="#000000"/>
-<path d="M0 379h68v5h-68zM1 380v3h66v-3z" fill="#5c0a68" class="glow-dim"/>
-<rect x="1" y="380" width="61" height="3" fill="#ffb0ff" class="glow-light"/>
+<rect x="0" y="381" width="68" height="3" fill="#303030"/>
+<rect x="0" y="382" width="68" height="1" fill="#5e5e5e"/>
 <rect x="0" y="390" width="68" height="13" fill="#06010a"/>
-<rect x="0" y="394" width="68" height="5" fill="#000000"/>
-<path d="M0 394h68v5h-68zM1 395v3h66v-3z" fill="#5c0a68" class="glow-dim"/>
-<rect x="1" y="395" width="64" height="3" fill="#ffb0ff" class="glow-light"/>
+<rect x="0" y="396" width="68" height="3" fill="#303030"/>
+<rect x="0" y="397" width="68" height="1" fill="#5e5e5e"/>
 <rect x="0" y="405" width="68" height="13" fill="#06010a"/>
-<rect x="0" y="409" width="68" height="5" fill="#000000"/>
-<path d="M0 409h68v5h-68zM1 410v3h66v-3z" fill="#5c0a68" class="glow-dim"/>
-<rect x="1" y="410" width="66" height="3" fill="#ffb0ff" class="glow-light"/>
-<rect x="15" y="422" width="14" height="11" fill="url(#g0)"/>
-<path d="M15 422h14v11h-14zM16 423v9h12v-9z" fill="#ffb0ff" class="glow-light"/>
-<rect x="22" y="424" width="1" height="7" fill="#5c0a68" class="glow-dim"/>
-<rect x="0" y="422" width="14" height="11" fill="url(#g1)"/>
-<path d="M0 422h14v11h-14zM1 423v9h12v-9z" fill="#ffb0ff" class="glow-light"/>
-<rect x="7" y="424" width="1" height="7" fill="#5c0a68" class="glow-dim"/>
+<rect x="0" y="411" width="68" height="3" fill="#303030"/>
+<rect x="0" y="412" width="68" height="1" fill="#5e5e5e"/>
+<rect x="15" y="422" width="14" height="1" fill="#ff2cff" class="glow"/>
+<rect x="15" y="422" width="1" height="11" fill="#ff2cff" class="glow"/>
+<rect x="16" y="424" width="13" height="9" fill="#303030"/>
+<rect x="17" y="425" width="11" height="7" fill="#5e5e5e"/>
+<rect x="18" y="428" width="9" height="1" fill="#9a9a9a"/>
+<rect x="0" y="422" width="14" height="1" fill="#ffb0ff" class="glow-light"/>
+<rect x="0" y="422" width="1" height="11" fill="#ffb0ff" class="glow-light"/>
+<rect x="1" y="424" width="13" height="9" fill="#303030"/>
+<rect x="2" y="425" width="11" height="7" fill="#9a9a9a"/>
+<rect x="3" y="428" width="9" height="1" fill="#303030"/>
 </svg>

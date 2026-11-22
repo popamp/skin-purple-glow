@@ -2,159 +2,158 @@
 <defs>
 <linearGradient id="g0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#24032c" class="glow-deep-stop"/><stop offset="1" stop-color="#06010a"/></linearGradient>
 <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5c0a68" class="glow-dim-stop"/><stop offset="1" stop-color="#24032c" class="glow-deep-stop"/></linearGradient>
-<linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff2cff" class="glow-stop"/><stop offset="1" stop-color="#5c0a68" class="glow-dim-stop"/></linearGradient>
 </defs>
 <rect x="0" y="0" width="344" height="87" fill="#000000"/>
 <rect x="0.5" y="0.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M2 2h5v1h-5zM2 4h5v1h-5zM2 6h5v1h-5z" fill="#ff2cff" class="glow"/>
+<path d="M2 2h5v1h-5zM2 4h5v1h-5zM2 6h5v1h-5z" fill="#2a8cff" class="ink"/>
 <rect x="0.5" y="9.5" width="8" height="8" rx="1.5" fill="url(#g1)" stroke="#ffb0ff" class="glow-light-stroke"/>
-<path d="M2 11h5v1h-5zM2 13h5v1h-5zM2 15h5v1h-5z" fill="#ffb0ff" class="glow-light"/>
+<path d="M2 11h5v1h-5zM2 13h5v1h-5zM2 15h5v1h-5z" fill="#a8d4ff" class="ink-light"/>
 <rect x="9.5" y="0.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M11 5h5v1h-5z" fill="#ff2cff" class="glow"/>
+<path d="M11 5h5v1h-5z" fill="#2a8cff" class="ink"/>
 <rect x="9.5" y="9.5" width="8" height="8" rx="1.5" fill="url(#g1)" stroke="#ffb0ff" class="glow-light-stroke"/>
-<path d="M11 14h5v1h-5z" fill="#ffb0ff" class="glow-light"/>
+<path d="M11 14h5v1h-5z" fill="#a8d4ff" class="ink-light"/>
 <rect x="18.5" y="0.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M20.5 2.5L24.5 6.5M24.5 2.5L20.5 6.5" fill="none" stroke="#ff2cff" stroke-width="1" class="glow-stroke"/>
+<path d="M20.5 2.5L24.5 6.5M24.5 2.5L20.5 6.5" fill="none" stroke="#2a8cff" stroke-width="1" class="ink-stroke"/>
 <rect x="18.5" y="9.5" width="8" height="8" rx="1.5" fill="url(#g1)" stroke="#ffb0ff" class="glow-light-stroke"/>
-<path d="M20.5 11.5L24.5 15.5M24.5 11.5L20.5 15.5" fill="none" stroke="#ffb0ff" stroke-width="1" class="glow-light-stroke"/>
+<path d="M20.5 11.5L24.5 15.5M24.5 11.5L20.5 15.5" fill="none" stroke="#a8d4ff" stroke-width="1" class="ink-light-stroke"/>
 <rect x="0.5" y="18.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M2 20h5v1h-5z" fill="#ff2cff" class="glow"/>
+<path d="M2 20h5v1h-5z" fill="#2a8cff" class="ink"/>
 <rect x="9.5" y="18.5" width="8" height="8" rx="1.5" fill="url(#g1)" stroke="#ffb0ff" class="glow-light-stroke"/>
-<path d="M11 20h5v1h-5z" fill="#ffb0ff" class="glow-light"/>
+<path d="M11 20h5v1h-5z" fill="#a8d4ff" class="ink-light"/>
 <rect x="0.5" y="27.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M2 29h5v1h-5zM2 30h1v3h-1zM6 30h1v3h-1zM2 33h5v1h-5z" fill="#ff2cff" class="glow"/>
+<path d="M2 29h5v1h-5zM2 30h1v3h-1zM6 30h1v3h-1zM2 33h5v1h-5z" fill="#2a8cff" class="ink"/>
 <rect x="9.5" y="27.5" width="8" height="8" rx="1.5" fill="url(#g1)" stroke="#ffb0ff" class="glow-light-stroke"/>
-<path d="M11 29h5v1h-5zM11 30h1v3h-1zM15 30h1v3h-1zM11 33h5v1h-5z" fill="#ffb0ff" class="glow-light"/>
-<rect x="0" y="36" width="17" height="7" fill="#000000"/>
-<path d="M0 36h17v7h-17zM1 37v5h15v-5z" fill="#5c0a68" class="glow-dim"/>
-<rect x="1" y="39" width="15" height="1" fill="#5c0a68" class="glow-dim"/>
-<rect x="20" y="36" width="3" height="7" fill="url(#g2)"/>
-<path d="M20 36h3v7h-3zM21 37v5h1v-5z" fill="#ffb0ff" class="glow-light"/>
-<rect x="21" y="38" width="1" height="3" fill="#5c0a68" class="glow-dim"/>
+<path d="M11 29h5v1h-5zM11 30h1v3h-1zM15 30h1v3h-1zM11 33h5v1h-5z" fill="#a8d4ff" class="ink-light"/>
+<rect x="0" y="36" width="17" height="7" fill="#06010a"/>
+<rect x="0" y="38" width="17" height="3" fill="#303030"/>
+<rect x="0" y="39" width="17" height="1" fill="#5e5e5e"/>
+<rect x="20" y="36" width="3" height="1" fill="#ff2cff" class="glow"/>
+<rect x="20" y="38" width="3" height="5" fill="#303030"/>
+<rect x="21" y="39" width="1" height="3" fill="#5e5e5e"/>
 <rect x="27" y="0" width="275" height="14" fill="#0e0a13"/>
 <rect x="27" y="0" width="275" height="1" fill="#ff2cff" class="glow"/>
 <rect x="27" y="0" width="1" height="14" fill="#ff2cff" class="glow"/>
 <rect x="301" y="0" width="1" height="14" fill="#ff2cff" class="glow"/>
-<path d="M151 4H154V5H155V6H154V7H152V9H151zM152 5V6H154V5zM156 5H157V8H159V9H157V8H156zM157 4H159V5H160V8H159V5H157zM161 4H164V5H165V6H164V7H162V9H161zM162 5V6H164V5zM166 5H167V6H169V5H170V9H169V7H167V9H166zM167 4H169V5H167zM171 4H172V5H174V4H175V9H174V7H172V9H171zM176 4H179V5H180V6H179V7H177V9H176zM177 5V6H179V5z" fill="#ff2cff" class="glow"/>
+<path d="M151 4H154V5H155V6H154V7H152V9H151zM152 5V6H154V5zM156 5H157V8H159V9H157V8H156zM157 4H159V5H160V8H159V5H157zM161 4H164V5H165V6H164V7H162V9H161zM162 5V6H164V5zM166 5H167V6H169V5H170V9H169V7H167V9H166zM167 4H169V5H167zM171 4H172V5H174V4H175V9H174V7H172V9H171zM176 4H179V5H180V6H179V7H177V9H176zM177 5V6H179V5z" fill="#2a8cff" class="ink"/>
 <rect x="33.5" y="3.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M35 5h5v1h-5zM35 7h5v1h-5zM35 9h5v1h-5z" fill="#ff2cff" class="glow"/>
+<path d="M35 5h5v1h-5zM35 7h5v1h-5zM35 9h5v1h-5z" fill="#2a8cff" class="ink"/>
 <rect x="271.5" y="3.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M273 8h5v1h-5z" fill="#ff2cff" class="glow"/>
+<path d="M273 8h5v1h-5z" fill="#2a8cff" class="ink"/>
 <rect x="281.5" y="3.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M283 5h5v1h-5z" fill="#ff2cff" class="glow"/>
+<path d="M283 5h5v1h-5z" fill="#2a8cff" class="ink"/>
 <rect x="291.5" y="3.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M293.5 5.5L297.5 9.5M297.5 5.5L293.5 9.5" fill="none" stroke="#ff2cff" stroke-width="1" class="glow-stroke"/>
+<path d="M293.5 5.5L297.5 9.5M297.5 5.5L293.5 9.5" fill="none" stroke="#2a8cff" stroke-width="1" class="ink-stroke"/>
 <rect x="27" y="15" width="275" height="14" fill="#0e0a13"/>
 <rect x="27" y="15" width="275" height="1" fill="#b01cc0" class="glow-mid"/>
 <rect x="27" y="15" width="1" height="14" fill="#b01cc0" class="glow-mid"/>
 <rect x="301" y="15" width="1" height="14" fill="#b01cc0" class="glow-mid"/>
-<path d="M151 19H154V20H155V21H154V22H152V24H151zM152 20V21H154V20zM156 20H157V23H159V24H157V23H156zM157 19H159V20H160V23H159V20H157zM161 19H164V20H165V21H164V22H162V24H161zM162 20V21H164V20zM166 20H167V21H169V20H170V24H169V22H167V24H166zM167 19H169V20H167zM171 19H172V20H174V19H175V24H174V22H172V24H171zM176 19H179V20H180V21H179V22H177V24H176zM177 20V21H179V20z" fill="#b01cc0" class="glow-mid"/>
+<path d="M151 19H154V20H155V21H154V22H152V24H151zM152 20V21H154V20zM156 20H157V23H159V24H157V23H156zM157 19H159V20H160V23H159V20H157zM161 19H164V20H165V21H164V22H162V24H161zM162 20V21H164V20zM166 20H167V21H169V20H170V24H169V22H167V24H166zM167 19H169V20H167zM171 19H172V20H174V19H175V24H174V22H172V24H171zM176 19H179V20H180V21H179V22H177V24H176zM177 20V21H179V20z" fill="#14427e" class="ink-dim"/>
 <rect x="33.5" y="18.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M35 20h5v1h-5zM35 22h5v1h-5zM35 24h5v1h-5z" fill="#ff2cff" class="glow"/>
+<path d="M35 20h5v1h-5zM35 22h5v1h-5zM35 24h5v1h-5z" fill="#2a8cff" class="ink"/>
 <rect x="271.5" y="18.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M273 23h5v1h-5z" fill="#ff2cff" class="glow"/>
+<path d="M273 23h5v1h-5z" fill="#2a8cff" class="ink"/>
 <rect x="281.5" y="18.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M283 20h5v1h-5z" fill="#ff2cff" class="glow"/>
+<path d="M283 20h5v1h-5z" fill="#2a8cff" class="ink"/>
 <rect x="291.5" y="18.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M293.5 20.5L297.5 24.5M297.5 20.5L293.5 24.5" fill="none" stroke="#ff2cff" stroke-width="1" class="glow-stroke"/>
+<path d="M293.5 20.5L297.5 24.5M297.5 20.5L293.5 24.5" fill="none" stroke="#2a8cff" stroke-width="1" class="ink-stroke"/>
 <rect x="27" y="57" width="275" height="14" fill="#0e0a13"/>
 <rect x="27" y="57" width="275" height="1" fill="#ff2cff" class="glow"/>
 <rect x="27" y="57" width="1" height="14" fill="#ff2cff" class="glow"/>
 <rect x="301" y="57" width="1" height="14" fill="#ff2cff" class="glow"/>
-<path d="M151 61H154V62H155V63H154V64H152V66H151zM152 62V63H154V62zM156 62H157V65H159V66H157V65H156zM157 61H159V62H160V65H159V62H157zM161 61H164V62H165V63H164V64H162V66H161zM162 62V63H164V62zM166 62H167V63H169V62H170V66H169V64H167V66H166zM167 61H169V62H167zM171 61H172V62H174V61H175V66H174V64H172V66H171zM176 61H179V62H180V63H179V64H177V66H176zM177 62V63H179V62z" fill="#ff2cff" class="glow"/>
+<path d="M151 61H154V62H155V63H154V64H152V66H151zM152 62V63H154V62zM156 62H157V65H159V66H157V65H156zM157 61H159V62H160V65H159V62H157zM161 61H164V62H165V63H164V64H162V66H161zM162 62V63H164V62zM166 62H167V63H169V62H170V66H169V64H167V66H166zM167 61H169V62H167zM171 61H172V62H174V61H175V66H174V64H172V66H171zM176 61H179V62H180V63H179V64H177V66H176zM177 62V63H179V62z" fill="#2a8cff" class="ink"/>
 <rect x="33.5" y="60.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M35 62h5v1h-5zM35 64h5v1h-5zM35 66h5v1h-5z" fill="#ff2cff" class="glow"/>
+<path d="M35 62h5v1h-5zM35 64h5v1h-5zM35 66h5v1h-5z" fill="#2a8cff" class="ink"/>
 <rect x="271.5" y="60.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M273 65h5v1h-5z" fill="#ff2cff" class="glow"/>
+<path d="M273 65h5v1h-5z" fill="#2a8cff" class="ink"/>
 <rect x="281.5" y="60.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M283 62h5v1h-5z" fill="#ff2cff" class="glow"/>
+<path d="M283 62h5v1h-5z" fill="#2a8cff" class="ink"/>
 <rect x="291.5" y="60.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M293.5 62.5L297.5 66.5M297.5 62.5L293.5 66.5" fill="none" stroke="#ff2cff" stroke-width="1" class="glow-stroke"/>
+<path d="M293.5 62.5L297.5 66.5M297.5 62.5L293.5 66.5" fill="none" stroke="#2a8cff" stroke-width="1" class="ink-stroke"/>
 <rect x="27" y="72" width="275" height="14" fill="#0e0a13"/>
 <rect x="27" y="72" width="275" height="1" fill="#b01cc0" class="glow-mid"/>
 <rect x="27" y="72" width="1" height="14" fill="#b01cc0" class="glow-mid"/>
 <rect x="301" y="72" width="1" height="14" fill="#b01cc0" class="glow-mid"/>
-<path d="M151 76H154V77H155V78H154V79H152V81H151zM152 77V78H154V77zM156 77H157V80H159V81H157V80H156zM157 76H159V77H160V80H159V77H157zM161 76H164V77H165V78H164V79H162V81H161zM162 77V78H164V77zM166 77H167V78H169V77H170V81H169V79H167V81H166zM167 76H169V77H167zM171 76H172V77H174V76H175V81H174V79H172V81H171zM176 76H179V77H180V78H179V79H177V81H176zM177 77V78H179V77z" fill="#b01cc0" class="glow-mid"/>
+<path d="M151 76H154V77H155V78H154V79H152V81H151zM152 77V78H154V77zM156 77H157V80H159V81H157V80H156zM157 76H159V77H160V80H159V77H157zM161 76H164V77H165V78H164V79H162V81H161zM162 77V78H164V77zM166 77H167V78H169V77H170V81H169V79H167V81H166zM167 76H169V77H167zM171 76H172V77H174V76H175V81H174V79H172V81H171zM176 76H179V77H180V78H179V79H177V81H176zM177 77V78H179V77z" fill="#14427e" class="ink-dim"/>
 <rect x="33.5" y="75.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M35 77h5v1h-5zM35 79h5v1h-5zM35 81h5v1h-5z" fill="#ff2cff" class="glow"/>
+<path d="M35 77h5v1h-5zM35 79h5v1h-5zM35 81h5v1h-5z" fill="#2a8cff" class="ink"/>
 <rect x="271.5" y="75.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M273 80h5v1h-5z" fill="#ff2cff" class="glow"/>
+<path d="M273 80h5v1h-5z" fill="#2a8cff" class="ink"/>
 <rect x="281.5" y="75.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M283 77h5v1h-5z" fill="#ff2cff" class="glow"/>
+<path d="M283 77h5v1h-5z" fill="#2a8cff" class="ink"/>
 <rect x="291.5" y="75.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M293.5 77.5L297.5 81.5M297.5 77.5L293.5 81.5" fill="none" stroke="#ff2cff" stroke-width="1" class="glow-stroke"/>
+<path d="M293.5 77.5L297.5 81.5M297.5 77.5L293.5 81.5" fill="none" stroke="#2a8cff" stroke-width="1" class="ink-stroke"/>
 <rect x="27" y="29" width="275" height="14" fill="#0e0a13"/>
 <rect x="27" y="29" width="275" height="1" fill="#ff2cff" class="glow"/>
 <rect x="27" y="42" width="275" height="1" fill="#ff2cff" class="glow"/>
 <rect x="27" y="29" width="1" height="14" fill="#ff2cff" class="glow"/>
 <rect x="301" y="29" width="1" height="14" fill="#ff2cff" class="glow"/>
 <rect x="33.5" y="32.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M35 34h5v1h-5zM35 36h5v1h-5zM35 38h5v1h-5z" fill="#ff2cff" class="glow"/>
-<path d="M47 33H50V34H51V35H50V36H48V38H47zM48 34V35H50V34zM52 34H53V37H55V38H53V37H52zM53 33H55V34H56V37H55V34H53zM57 33H60V34H61V35H60V36H58V38H57zM58 34V35H60V34zM62 34H63V35H65V34H66V38H65V36H63V38H62zM63 33H65V34H63zM67 33H68V34H70V33H71V38H70V36H68V38H67zM72 33H75V34H76V35H75V36H73V38H72zM73 34V35H75V34z" fill="#ff2cff" class="glow"/>
+<path d="M35 34h5v1h-5zM35 36h5v1h-5zM35 38h5v1h-5z" fill="#2a8cff" class="ink"/>
+<path d="M47 33H50V34H51V35H50V36H48V38H47zM48 34V35H50V34zM52 34H53V37H55V38H53V37H52zM53 33H55V34H56V37H55V34H53zM57 33H60V34H61V35H60V36H58V38H57zM58 34V35H60V34zM62 34H63V35H65V34H66V38H65V36H63V38H62zM63 33H65V34H63zM67 33H68V34H70V33H71V38H70V36H68V38H67zM72 33H75V34H76V35H75V36H73V38H72zM73 34V35H75V34z" fill="#2a8cff" class="ink"/>
 <rect x="154" y="31" width="31" height="10" fill="#000000"/>
 <path d="M154 31h31v10h-31zM155 32v8h29v-8z" fill="#5c0a68" class="glow-dim"/>
 <rect x="171" y="34" width="1" height="1" fill="#ff2cff" class="glow"/>
 <rect x="171" y="36" width="1" height="1" fill="#ff2cff" class="glow"/>
 <rect x="194" y="31" width="59" height="10" fill="#000000"/>
 <path d="M194 31h59v10h-59zM195 32v8h57v-8z" fill="#5c0a68" class="glow-dim"/>
-<path d="M197 33h1v6h-1zM203 33L199 36L203 39Z" fill="#ff2cff" class="glow"/>
-<path d="M207 33L211 36L207 39Z" fill="#ff2cff" class="glow"/>
-<path d="M215 33h2v6h-2zM219 33h2v6h-2z" fill="#ff2cff" class="glow"/>
-<path d="M224 33h6v6h-6z" fill="#ff2cff" class="glow"/>
-<path d="M233 33L237 36L233 39ZM238 33h1v6h-1z" fill="#ff2cff" class="glow"/>
-<path d="M241 37L245 33L249 37ZM241 38h8v1h-8z" fill="#ff2cff" class="glow"/>
-<rect x="253" y="33" width="17" height="7" fill="#000000"/>
-<path d="M253 33h17v7h-17zM254 34v5h15v-5z" fill="#5c0a68" class="glow-dim"/>
-<rect x="254" y="36" width="15" height="1" fill="#5c0a68" class="glow-dim"/>
+<path d="M197 33h1v6h-1zM203 33L199 36L203 39Z" fill="#2a8cff" class="ink"/>
+<path d="M207 33L211 36L207 39Z" fill="#2a8cff" class="ink"/>
+<path d="M215 33h2v6h-2zM219 33h2v6h-2z" fill="#2a8cff" class="ink"/>
+<path d="M224 33h6v6h-6z" fill="#2a8cff" class="ink"/>
+<path d="M233 33L237 36L233 39ZM238 33h1v6h-1z" fill="#2a8cff" class="ink"/>
+<path d="M241 37L245 33L249 37ZM241 38h8v1h-8z" fill="#2a8cff" class="ink"/>
+<rect x="253" y="33" width="17" height="7" fill="#06010a"/>
+<rect x="253" y="35" width="17" height="3" fill="#303030"/>
+<rect x="253" y="36" width="17" height="1" fill="#5e5e5e"/>
 <rect x="271.5" y="32.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M273 37h5v1h-5z" fill="#ff2cff" class="glow"/>
+<path d="M273 37h5v1h-5z" fill="#2a8cff" class="ink"/>
 <rect x="281.5" y="32.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M283 34h5v1h-5zM283 35h1v3h-1zM287 35h1v3h-1zM283 38h5v1h-5z" fill="#ff2cff" class="glow"/>
+<path d="M283 34h5v1h-5zM283 35h1v3h-1zM287 35h1v3h-1zM283 38h5v1h-5z" fill="#2a8cff" class="ink"/>
 <rect x="291.5" y="32.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M293.5 34.5L297.5 38.5M297.5 34.5L293.5 38.5" fill="none" stroke="#ff2cff" stroke-width="1" class="glow-stroke"/>
+<path d="M293.5 34.5L297.5 38.5M297.5 34.5L293.5 38.5" fill="none" stroke="#2a8cff" stroke-width="1" class="ink-stroke"/>
 <rect x="27" y="42" width="275" height="14" fill="#0e0a13"/>
 <rect x="27" y="42" width="275" height="1" fill="#b01cc0" class="glow-mid"/>
 <rect x="27" y="55" width="275" height="1" fill="#b01cc0" class="glow-mid"/>
 <rect x="27" y="42" width="1" height="14" fill="#b01cc0" class="glow-mid"/>
 <rect x="301" y="42" width="1" height="14" fill="#b01cc0" class="glow-mid"/>
 <rect x="33.5" y="45.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M35 47h5v1h-5zM35 49h5v1h-5zM35 51h5v1h-5z" fill="#ff2cff" class="glow"/>
-<path d="M47 46H50V47H51V48H50V49H48V51H47zM48 47V48H50V47zM52 47H53V50H55V51H53V50H52zM53 46H55V47H56V50H55V47H53zM57 46H60V47H61V48H60V49H58V51H57zM58 47V48H60V47zM62 47H63V48H65V47H66V51H65V49H63V51H62zM63 46H65V47H63zM67 46H68V47H70V46H71V51H70V49H68V51H67zM72 46H75V47H76V48H75V49H73V51H72zM73 47V48H75V47z" fill="#b01cc0" class="glow-mid"/>
+<path d="M35 47h5v1h-5zM35 49h5v1h-5zM35 51h5v1h-5z" fill="#2a8cff" class="ink"/>
+<path d="M47 46H50V47H51V48H50V49H48V51H47zM48 47V48H50V47zM52 47H53V50H55V51H53V50H52zM53 46H55V47H56V50H55V47H53zM57 46H60V47H61V48H60V49H58V51H57zM58 47V48H60V47zM62 47H63V48H65V47H66V51H65V49H63V51H62zM63 46H65V47H63zM67 46H68V47H70V46H71V51H70V49H68V51H67zM72 46H75V47H76V48H75V49H73V51H72zM73 47V48H75V47z" fill="#14427e" class="ink-dim"/>
 <rect x="154" y="44" width="31" height="10" fill="#000000"/>
 <path d="M154 44h31v10h-31zM155 45v8h29v-8z" fill="#5c0a68" class="glow-dim"/>
 <rect x="171" y="47" width="1" height="1" fill="#ff2cff" class="glow"/>
 <rect x="171" y="49" width="1" height="1" fill="#ff2cff" class="glow"/>
 <rect x="194" y="44" width="59" height="10" fill="#000000"/>
 <path d="M194 44h59v10h-59zM195 45v8h57v-8z" fill="#5c0a68" class="glow-dim"/>
-<path d="M197 46h1v6h-1zM203 46L199 49L203 52Z" fill="#ff2cff" class="glow"/>
-<path d="M207 46L211 49L207 52Z" fill="#ff2cff" class="glow"/>
-<path d="M215 46h2v6h-2zM219 46h2v6h-2z" fill="#ff2cff" class="glow"/>
-<path d="M224 46h6v6h-6z" fill="#ff2cff" class="glow"/>
-<path d="M233 46L237 49L233 52ZM238 46h1v6h-1z" fill="#ff2cff" class="glow"/>
-<path d="M241 50L245 46L249 50ZM241 51h8v1h-8z" fill="#ff2cff" class="glow"/>
-<rect x="253" y="46" width="17" height="7" fill="#000000"/>
-<path d="M253 46h17v7h-17zM254 47v5h15v-5z" fill="#5c0a68" class="glow-dim"/>
-<rect x="254" y="49" width="15" height="1" fill="#5c0a68" class="glow-dim"/>
+<path d="M197 46h1v6h-1zM203 46L199 49L203 52Z" fill="#2a8cff" class="ink"/>
+<path d="M207 46L211 49L207 52Z" fill="#2a8cff" class="ink"/>
+<path d="M215 46h2v6h-2zM219 46h2v6h-2z" fill="#2a8cff" class="ink"/>
+<path d="M224 46h6v6h-6z" fill="#2a8cff" class="ink"/>
+<path d="M233 46L237 49L233 52ZM238 46h1v6h-1z" fill="#2a8cff" class="ink"/>
+<path d="M241 50L245 46L249 50ZM241 51h8v1h-8z" fill="#2a8cff" class="ink"/>
+<rect x="253" y="46" width="17" height="7" fill="#06010a"/>
+<rect x="253" y="48" width="17" height="3" fill="#303030"/>
+<rect x="253" y="49" width="17" height="1" fill="#5e5e5e"/>
 <rect x="271.5" y="45.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M273 50h5v1h-5z" fill="#ff2cff" class="glow"/>
+<path d="M273 50h5v1h-5z" fill="#2a8cff" class="ink"/>
 <rect x="281.5" y="45.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M283 47h5v1h-5zM283 48h1v3h-1zM287 48h1v3h-1zM283 51h5v1h-5z" fill="#ff2cff" class="glow"/>
+<path d="M283 47h5v1h-5zM283 48h1v3h-1zM287 48h1v3h-1zM283 51h5v1h-5z" fill="#2a8cff" class="ink"/>
 <rect x="291.5" y="45.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
-<path d="M293.5 47.5L297.5 51.5M297.5 47.5L293.5 51.5" fill="none" stroke="#ff2cff" stroke-width="1" class="glow-stroke"/>
+<path d="M293.5 47.5L297.5 51.5M297.5 47.5L293.5 51.5" fill="none" stroke="#2a8cff" stroke-width="1" class="ink-stroke"/>
 <rect x="304" y="0" width="8" height="43" fill="#000000"/>
-<path d="M306 4H307V7H309V8H307V7H306zM307 3H309V4H310V7H309V4H307z" fill="#5c0a68" class="glow-dim"/>
-<path d="M306 12H307V13H309V12H310V16H309V14H307V16H306zM307 11H309V12H307z" fill="#5c0a68" class="glow-dim"/>
-<path d="M306 18H309V19H308V22H309V23H306V22H307V19H306z" fill="#5c0a68" class="glow-dim"/>
-<path d="M306 25H309V26H310V29H309V30H306zM307 26V29H309V26z" fill="#5c0a68" class="glow-dim"/>
-<path d="M306 33H307V36H309V38H307V36H306zM309 33H310V36H309z" fill="#5c0a68" class="glow-dim"/>
+<path d="M306 4H307V7H309V8H307V7H306zM307 3H309V4H310V7H309V4H307z" fill="#14427e" class="ink-dim"/>
+<path d="M306 12H307V13H309V12H310V16H309V14H307V16H306zM307 11H309V12H307z" fill="#14427e" class="ink-dim"/>
+<path d="M306 18H309V19H308V22H309V23H306V22H307V19H306z" fill="#14427e" class="ink-dim"/>
+<path d="M306 25H309V26H310V29H309V30H306zM307 26V29H309V26z" fill="#14427e" class="ink-dim"/>
+<path d="M306 33H307V36H309V38H307V36H306zM309 33H310V36H309z" fill="#14427e" class="ink-dim"/>
 <rect x="304" y="47" width="8" height="8" fill="#000000"/>
-<path d="M306 49H307V52H309V53H307V52H306zM307 48H309V49H310V52H309V49H307z" fill="#ff2cff" class="glow"/>
+<path d="M306 49H307V52H309V53H307V52H306zM307 48H309V49H310V52H309V49H307z" fill="#2a8cff" class="ink"/>
 <rect x="312" y="55" width="8" height="7" fill="#000000"/>
-<path d="M314 56H315V57H317V56H318V60H317V58H315V60H314zM315 55H317V56H315z" fill="#ff2cff" class="glow"/>
+<path d="M314 56H315V57H317V56H318V60H317V58H315V60H314zM315 55H317V56H315z" fill="#2a8cff" class="ink"/>
 <rect x="320" y="62" width="8" height="7" fill="#000000"/>
-<path d="M322 62H325V63H324V66H325V67H322V66H323V63H322z" fill="#ff2cff" class="glow"/>
+<path d="M322 62H325V63H324V66H325V67H322V66H323V63H322z" fill="#2a8cff" class="ink"/>
 <rect x="328" y="69" width="8" height="8" fill="#000000"/>
-<path d="M330 70H333V71H334V74H333V75H330zM331 71V74H333V71z" fill="#ff2cff" class="glow"/>
+<path d="M330 70H333V71H334V74H333V75H330zM331 71V74H333V71z" fill="#2a8cff" class="ink"/>
 <rect x="336" y="77" width="8" height="7" fill="#000000"/>
-<path d="M338 77H339V80H341V82H339V80H338zM341 77H342V80H341z" fill="#ff2cff" class="glow"/>
+<path d="M338 77H339V80H341V82H339V80H338zM341 77H342V80H341z" fill="#2a8cff" class="ink"/>
 </svg>
