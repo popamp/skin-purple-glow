@@ -48,10 +48,39 @@ def slider_frame(p, x, y, k):
     p.path(rails(x, y), "glow")
 
 
+# The graph's floor: a trapezoid seen in perspective, its far edge at FLOOR_TOP, its near edge at the bottom
+FLOOR_TOP, FLOOR_BOTTOM = 3, 18  # rows in the graph
+FAR, NEAR = (24, 89), (2, 111)  # the far and the near edge's ends
+ACROSS, DEEP = 16, 6  # the strips running away from the eye, the rows across them
+
+
+def floor_x(t, y):
+    """Where a line running away from the eye, `t` of the way from left to right, crosses row `y`."""
+    k = (y - FLOOR_TOP) / (FLOOR_BOTTOM - FLOOR_TOP)
+    left = FAR[0] + (NEAR[0] - FAR[0]) * k
+    right = FAR[1] + (NEAR[1] - FAR[1]) * k
+    return left + (right - left) * t
+
+
+def floor(p, x, y):
+    """A dark blue floor under the graph, lined in perspective: lines converging into the distance, and
+    lines across them closer together the farther they are."""
+    top, bottom = y + FLOOR_TOP, y + FLOOR_BOTTOM
+    p.path(f"M{x + FAR[0]} {top}H{x + FAR[1]}L{x + NEAR[1]} {bottom}H{x + NEAR[0]}Z", "ink-dim")
+    d = ""
+    for i in range(ACROSS + 1):
+        t = i / ACROSS
+        d += f"M{x + floor_x(t, FLOOR_TOP):.2f} {top}L{x + floor_x(t, FLOOR_BOTTOM):.2f} {bottom}"
+    for j in range(DEEP + 1):
+        row = FLOOR_TOP + (FLOOR_BOTTOM - FLOOR_TOP) * (j / DEEP) ** 1.6
+        d += f"M{x + floor_x(0, row):.2f} {y + row:.2f}H{x + floor_x(1, row):.2f}"
+    p.line(d, "ink", 0.6)
+
+
 def graph(p):
-    """The graph's ground with its grid, the column of line colours beside it and the preamp's line."""
+    """The graph's ground with its floor, the column of line colours beside it and the preamp's line."""
     p.rect(0, 294, 113, 19, "lcd")
-    p.path("".join(f"M{1 + 12 * i} 294h1v19h-1z" for i in range(10)) + "M0 303h113v1h-113z", "glow-deep")
+    floor(p, 0, 294)
     for row in range(19):
         p.rect(115, 294 + row, 1, 1, level_colour(round(27 * (1 - row / 18))))
     p.rect(0, 314, 113, 1, "glow-mid")
