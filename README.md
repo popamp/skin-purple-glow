@@ -11,13 +11,16 @@ After the Winamp 2 skin "Purple Glow v2", whose archive could not be
 found. Nothing of the original is copied: the look was redrawn from a
 single screenshot with whole simple shapes. The buttons are rounded and
 glow (an outline blurred by an SVG filter behind each one); the title
-strips are one flat near-black fill. The look it started from lives on as
+strips are one flat near-black fill, edged in the same glow as the rest of
+the window whether it is focused or not; only the name dims. The look it
+started from lives on as
 [Neon](https://github.com/popamp/skin-neon).
 
 It draws every classic sheet in SVG, has a bar view of the main window
 (the main menu's Toolbar mode), a media library window with its own
-title, and five colour sets for the glow (Purple, Cyan, Lime, Amber and
-Crimson) in the main menu's Colours.
+title, volume and balance sliders in the shaded equalizer, and five
+colour sets for the glow (Purple, Cyan, Lime, Amber and Crimson) in the
+main menu's Colours.
 
 The SVG files and `skin.toml` are written by `tools/gen.py`
 (`python3 -I -B tools/gen.py`). Every window is put together from the
@@ -26,7 +29,7 @@ same parts in `tools/parts.py`; the colours by role are in `tools/kit.py`.
 script reads its letters from `text.svg`. The generator started as a copy
 of [Popamp Default](https://github.com/popamp/popamp-skin-default)'s.
 
-![Purple Glow: main window, equalizer and playlist in every colour set](preview.png)
+![Purple Glow: main window, equalizer and playlist in every colour set side by side at double size, and the bar below](preview.png)
 
 A vector skin for [Popamp](https://github.com/popamp/popamp), skin format
 version 1. Needs Popamp 1.0.0 or newer.
