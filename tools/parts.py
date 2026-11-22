@@ -13,7 +13,7 @@ from kit import Gradient
 
 CELL_W, CELL_H = 5, 6
 ROWS = ('ABCDEFGHIJKLMNOPQRSTUVWXYZ"@', "0123456789….:()-'!_+\\/[]^&%,=$#")
-TEXT_SVG = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "text.svg")
+TEXT_SVG = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "fonts", "text.svg")
 
 
 def moved(piece, dx, dy):

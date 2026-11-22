@@ -2,6 +2,7 @@
 from art_bar import (BAR_H, BAR_LEFT, BAR_MIN, BAR_RIGHT, BOX, CLOCK, DISPLAY_X, REPEAT, SHUFFLE, THUMB_TOP, TOGGLE_H, VOLUME_H,
                      VOLUME_THUMB, VOLUME_TOP, VOLUME_W)
 from art_main import STATES
+from kit import sheet_file
 from art_pl import PLATE_W
 
 
@@ -23,7 +24,7 @@ def element(kind, place, view="bar", **keys):
 
 
 def area(sheet, x, y, w, h):
-    return {"file": f"{sheet}.svg", "area": [x, y, w, h]}
+    return {"file": sheet_file(sheet), "area": [x, y, w, h]}
 
 
 def end(x):
@@ -83,7 +84,7 @@ def bar_window():
     thumb = sprite("posbar", 29, 10, (248, 0), (278, 0))
     e += element("slider", (BAR_LEFT, THUMB_TOP, end(0), THUMB_TOP + 10), value="position", thumb=thumb, thumb_len=29,
                  live=False, show="seekable", cursor="posbar", menu="seek")  # fmt: skip
-    track = {"file": f"{CONTROLS}.svg", "first": [0, VOLUME_TOP, VOLUME_W, VOLUME_H], "step": [0, VOLUME_H], "count": 28}
+    track = {"file": sheet_file(CONTROLS), "first": [0, VOLUME_TOP, VOLUME_W, VOLUME_H], "step": [0, VOLUME_H], "count": 28}
     ty, tw, th = VOLUME_THUMB
     thumb = {"normal": area(CONTROLS, 15, ty, tw, th), "pressed": area(CONTROLS, 0, ty, tw, th)}
     thumb = {k: v | {"offset": [0, (VOLUME_H - th) // 2]} for k, v in thumb.items()}

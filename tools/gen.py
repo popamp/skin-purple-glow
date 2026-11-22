@@ -5,7 +5,7 @@
 Every window is put together from the same parts (tools/parts.py): one
 panel and edge, one title strip with one set of title buttons, where only
 the window's name differs, one kind of button, well and thumb. text.svg and
-numbers.svg are the skin's lettering and are drawn by hand; the rest is
+numbers.svg (in fonts/) are the skin's lettering and are drawn by hand; the rest is
 written here. Running it again gives the same files.
 """
 import os
@@ -18,7 +18,7 @@ import art_eq  # noqa: E402
 import art_main  # noqa: E402
 import art_pl  # noqa: E402
 import windows  # noqa: E402
-from kit import Picture, colour_sets  # noqa: E402
+from kit import Picture, colour_sets, sheet_file  # noqa: E402
 
 # sheet: (width, height, drawing); text.svg and numbers.svg are the lettering, drawn by hand
 SHEETS = {
@@ -56,7 +56,7 @@ VIS = ["#000000", "glow-deep", *["glow-light"] * 4, *["glow"] * 6, *["glow-mid"]
 
 def skin_toml():
     lines = [META, *colour_sets(), "", "[sheets]"]
-    lines += [f'{name} = "{name}.svg"' for name in (*SHEETS, *LETTERING)]
+    lines += [f'{name} = "{sheet_file(name)}"' for name in (*SHEETS, *LETTERING)]
     lines += ["", "[playlist]", *(f'{k} = "{c}"' for k, c in PLAYLIST.items())]
     lines += ["", "[vis]", "colors = ["]
     lines += ["    " + ", ".join(f'"{c}"' for c in VIS[i : i + 8]) + "," for i in range(0, 24, 8)]
@@ -72,7 +72,7 @@ def draw(path, w, h, art):
 
 def build(out):
     for name, (w, h, art) in SHEETS.items():
-        draw(os.path.join(out, f"{name}.svg"), w, h, art)
+        draw(os.path.join(out, sheet_file(name)), w, h, art)
     for name, (w, h, art) in art_bar.PICTURES.items():
         draw(os.path.join(out, "bar", f"{name}.svg"), w, h, art)
     draw(os.path.join(out, "ml", "title.svg"), art_pl.PLATE_W, 41, art_pl.ml_title)

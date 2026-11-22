@@ -25,8 +25,10 @@ main menu's Colours.
 The SVG files and `skin.toml` are written by `tools/gen.py`
 (`python3 -I -B tools/gen.py`). Every window is put together from the
 same parts in `tools/parts.py`; the colours by role are in `tools/kit.py`.
-`text.svg` and `numbers.svg`, the lettering, are drawn by hand and the
-script reads its letters from `text.svg`. The generator started as a copy
+The pictures lie by window: `main/`, `eq/` (equalizer), `pl/` (playlist),
+`bar/` and `ml/` (media library); which sheet goes where is in
+`tools/kit.py`. `fonts/text.svg` and `fonts/numbers.svg`, the lettering,
+are drawn by hand and the script reads its letters from `fonts/text.svg`. The generator started as a copy
 of [Popamp Default](https://github.com/popamp/popamp-skin-default)'s.
 
 ![Purple Glow: main window, equalizer and playlist in every colour set side by side at double size, and the bar below](preview.png)

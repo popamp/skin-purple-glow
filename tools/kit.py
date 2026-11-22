@@ -133,3 +133,18 @@ def suffixed(role, kind):
 def class_of(attrs):
     """The class in a `fill=".." class=".."` pair, or nothing."""
     return attrs.split(' class="')[1].rstrip('"') if ' class="' in attrs else ""
+
+
+# Where each classic sheet lies, by the window it draws; the bar's and the library's pictures have their own folders
+FOLDERS = {
+    "main": ("main", "cbuttons", "titlebar", "shufrep", "volume", "balance", "monoster", "playpaus", "posbar"),
+    "eq": ("eqmain", "eq_ex"),
+    "pl": ("pledit",),
+    "fonts": ("text", "numbers"),
+}
+
+
+def sheet_file(name):
+    """A sheet's file within the skin: `main` is main/main.svg; a name with its folder in it stays as it is."""
+    folder = next((f for f, names in FOLDERS.items() if name in names), None)
+    return f"{folder}/{name}.svg" if folder else f"{name}.svg"
