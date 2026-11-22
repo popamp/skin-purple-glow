@@ -127,8 +127,8 @@ def lettered_button(p, x, y, w, h, text, pressed=False, lit=None):
 
 TITLE_H = 14
 BOX = 9  # a title button
-# focused or not: the edge, the name
-STRIP = {True: ("glow", "ink"), False: ("glow-mid", "ink-dim")}
+# focused or not: the name. The edge is the window's and glows the same either way.
+NAME_INK = {True: "ink", False: "ink-dim"}
 # A title button's glyph as rectangles in its 9 x 9 box (Main Menu's and Close's are drawn to any size)
 GLYPHS = {
     "min": ((2, 5, 5, 1),),
@@ -153,10 +153,10 @@ def title_button(p, x, y, glyph, pressed=False, size=BOX):
     p.path("".join(f"M{x + gx} {y + gy}h{gw}v{gh}h{-gw}z" for gx, gy, gw, gh in rects), ink(pressed))
 
 
-def strip_ground(p, x, y, w, focused, left=False, right=False, bottom=False):
+def strip_ground(p, x, y, w, left=False, right=False, bottom=False):
     """The strip from `x` to `x + w`: one flat near-black fill with the window's edge along its top (and its
     ends, and its bottom when the strip is the whole shaded window)."""
-    edge = STRIP[focused][0]
+    edge = "glow"
     p.rect(x, y, w, TITLE_H, "title")
     p.rect(x, y, w, 1, edge)
     if bottom:
@@ -170,7 +170,7 @@ def strip_ground(p, x, y, w, focused, left=False, right=False, bottom=False):
 def title_name(p, text, x0, x1, y, focused):
     """A window's name in the middle of `x0`..`x1`."""
     left = x0 + (x1 - x0 - text_width(text)) // 2
-    letters(p, text, left, y + 4, STRIP[focused][1])
+    letters(p, text, left, y + 4, NAME_INK[focused])
 
 
 # Where a window's title buttons are, from its right end; Main Menu from its left
@@ -181,7 +181,7 @@ RULES_FROM, RULES_TO = 6, 4  # the name's room's margins: from the left end (or 
 
 def title_strip(p, x, y, w, name, focused, buttons=("shade", "close"), menu=False, shaded=False):
     """A whole title strip: ground, name and buttons, as every window has it."""
-    strip_ground(p, x, y, w, focused, left=True, right=True, bottom=shaded)
+    strip_ground(p, x, y, w, left=True, right=True, bottom=shaded)
     start = x + (MENU_X + BOX + RULES_FROM - 3 if menu else RULES_FROM)
     first = min((RIGHT_BUTTONS[b] for b in buttons), default=0)
     title_name(p, name, start, x + w - first - RULES_TO, y, focused)

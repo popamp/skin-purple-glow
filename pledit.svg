@@ -32,23 +32,23 @@
 <rect x="153" y="19" width="6" height="1" fill="#5c0a68" class="glow-dim"/>
 <rect x="162" y="19" width="10" height="1" fill="#5c0a68" class="glow-dim"/>
 <rect x="0" y="21" width="25" height="14" fill="#0e0a13"/>
-<rect x="0" y="21" width="25" height="1" fill="#b01cc0" class="glow-mid"/>
-<rect x="0" y="21" width="1" height="14" fill="#b01cc0" class="glow-mid"/>
+<rect x="0" y="21" width="25" height="1" fill="#ff2cff" class="glow"/>
+<rect x="0" y="21" width="1" height="14" fill="#ff2cff" class="glow"/>
 <rect x="0" y="35" width="25" height="6" fill="#06010a"/>
 <rect x="0" y="35" width="1" height="6" fill="#ff2cff" class="glow"/>
 <rect x="11" y="40" width="14" height="1" fill="#5c0a68" class="glow-dim"/>
 <rect x="26" y="21" width="100" height="14" fill="#0e0a13"/>
-<rect x="26" y="21" width="100" height="1" fill="#b01cc0" class="glow-mid"/>
+<rect x="26" y="21" width="100" height="1" fill="#ff2cff" class="glow"/>
 <path d="M56 25H59V26H60V27H59V28H57V30H56zM57 26V27H59V26zM61 25H62V29H65V30H61zM66 26H67V27H69V26H70V30H69V28H67V30H66zM67 25H69V26H67zM71 25H72V27H74V28H73V30H72V27H71zM74 25H75V27H74zM76 25H77V29H80V30H76zM81 25H84V26H83V29H84V30H81V29H82V26H81zM86 26H87V27H89V28H90V29H89V30H86V29H89V28H87V27H86zM87 25H90V26H87zM91 25H94V26H93V30H92V26H91z" fill="#14427e" class="ink-dim"/>
 <rect x="26" y="35" width="100" height="6" fill="#06010a"/>
 <rect x="26" y="40" width="100" height="1" fill="#5c0a68" class="glow-dim"/>
 <rect x="127" y="21" width="25" height="14" fill="#0e0a13"/>
-<rect x="127" y="21" width="25" height="1" fill="#b01cc0" class="glow-mid"/>
+<rect x="127" y="21" width="25" height="1" fill="#ff2cff" class="glow"/>
 <rect x="127" y="35" width="25" height="6" fill="#06010a"/>
 <rect x="127" y="40" width="25" height="1" fill="#5c0a68" class="glow-dim"/>
 <rect x="153" y="21" width="25" height="14" fill="#0e0a13"/>
-<rect x="153" y="21" width="25" height="1" fill="#b01cc0" class="glow-mid"/>
-<rect x="177" y="21" width="1" height="14" fill="#b01cc0" class="glow-mid"/>
+<rect x="153" y="21" width="25" height="1" fill="#ff2cff" class="glow"/>
+<rect x="177" y="21" width="1" height="14" fill="#ff2cff" class="glow"/>
 <rect x="158.5" y="24.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
 <path d="M160 26h5v1h-5z" fill="#2a8cff" class="ink"/>
 <rect x="167.5" y="24.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
@@ -94,9 +94,9 @@
 <rect x="138.5" y="45.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
 <path d="M140.5 47.5L144.5 51.5M144.5 47.5L140.5 51.5" fill="none" stroke="#2a8cff" stroke-width="1" class="ink-stroke"/>
 <rect x="99" y="57" width="50" height="14" fill="#0e0a13"/>
-<rect x="99" y="57" width="50" height="1" fill="#b01cc0" class="glow-mid"/>
-<rect x="99" y="70" width="50" height="1" fill="#b01cc0" class="glow-mid"/>
-<rect x="148" y="57" width="1" height="14" fill="#b01cc0" class="glow-mid"/>
+<rect x="99" y="57" width="50" height="1" fill="#ff2cff" class="glow"/>
+<rect x="99" y="70" width="50" height="1" fill="#ff2cff" class="glow"/>
+<rect x="148" y="57" width="1" height="14" fill="#ff2cff" class="glow"/>
 <rect x="128.5" y="60.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
 <path d="M130 62h5v1h-5zM130 63h1v3h-1zM134 63h1v3h-1zM130 66h5v1h-5z" fill="#2a8cff" class="ink"/>
 <rect x="138.5" y="60.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>

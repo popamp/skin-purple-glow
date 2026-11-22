@@ -81,9 +81,9 @@
 <rect x="264.5" y="137.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
 <path d="M266.5 139.5L270.5 143.5M270.5 139.5L266.5 143.5" fill="none" stroke="#2a8cff" stroke-width="1" class="ink-stroke"/>
 <rect x="0" y="149" width="275" height="14" fill="#0e0a13"/>
-<rect x="0" y="149" width="275" height="1" fill="#b01cc0" class="glow-mid"/>
-<rect x="0" y="149" width="1" height="14" fill="#b01cc0" class="glow-mid"/>
-<rect x="274" y="149" width="1" height="14" fill="#b01cc0" class="glow-mid"/>
+<rect x="0" y="149" width="275" height="1" fill="#ff2cff" class="glow"/>
+<rect x="0" y="149" width="1" height="14" fill="#ff2cff" class="glow"/>
+<rect x="274" y="149" width="1" height="14" fill="#ff2cff" class="glow"/>
 <path d="M111 153H115V154H112V155H114V156H112V157H115V158H111zM116 154H117V157H118V156H119V154H120V158H117V157H116zM117 153H119V154H117zM121 153H122V157H124V158H122V157H121zM124 153H125V157H124zM126 154H127V155H129V154H130V158H129V156H127V158H126zM127 153H129V154H127zM131 153H132V157H135V158H131zM136 153H139V154H138V157H139V158H136V157H137V154H136zM141 153H145V155H144V156H142V157H145V158H141V156H142V155H144V154H141zM146 153H150V154H147V155H149V156H147V157H150V158H146zM151 153H154V154H155V155H154V157H155V158H154V157H153V156H152V158H151zM152 154V155H154V154z" fill="#14427e" class="ink-dim"/>
 <rect x="254.5" y="152.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
 <path d="M256 154h5v1h-5z" fill="#2a8cff" class="ink"/>

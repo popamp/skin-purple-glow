@@ -32,7 +32,7 @@ def panel_rows(p, x, y, w):
 
 
 def top_left(p, y, focused):
-    strip_ground(p, 0, y, PIECE_W, focused, left=True)
+    strip_ground(p, 0, y, PIECE_W, left=True)
     panel_rows(p, 0, y, PIECE_W)
     p.rect(0, y + TITLE_H, 1, TOP_H - TITLE_H, "glow")
     p.rect(11, y + LIST_TOP, PIECE_W - 11, 1, "glow-dim")
@@ -40,21 +40,21 @@ def top_left(p, y, focused):
 
 def plate(p, x, y, focused, name):
     """The plate the window's name is on, in the middle of the strip."""
-    strip_ground(p, x, y, PLATE_W, focused)
+    strip_ground(p, x, y, PLATE_W)
     title_name(p, name, x, x + PLATE_W, y, focused)
     panel_rows(p, x, y, PLATE_W)
     p.rect(x, y + LIST_TOP, PLATE_W, 1, "glow-dim")
 
 
 def top_tile(p, y, focused):
-    strip_ground(p, TOP_TILE, y, PIECE_W, focused)
+    strip_ground(p, TOP_TILE, y, PIECE_W)
     panel_rows(p, TOP_TILE, y, PIECE_W)
     p.rect(TOP_TILE, y + LIST_TOP, PIECE_W, 1, "glow-dim")
 
 
 def top_right(p, y, focused):
     x = TOP_RIGHT
-    strip_ground(p, x, y, PIECE_W, focused, right=True)
+    strip_ground(p, x, y, PIECE_W, right=True)
     title_button(p, x + PIECE_W - 20, y + 3, "shade")
     title_button(p, x + PIECE_W - 11, y + 3, "close")
     panel_rows(p, x, y, PIECE_W)
@@ -141,10 +141,10 @@ def vis_piece(p):
 
 def shade_pieces(p):
     """The shaded playlist: the left end at 72, 42, the tile under it, the right end with its buttons, focused at row 42, not at 57."""
-    strip_ground(p, 72, 42, 25, True, left=True, bottom=True)
-    strip_ground(p, 72, 57, 25, True, bottom=True)  # the tile between them
+    strip_ground(p, 72, 42, 25, left=True, bottom=True)
+    strip_ground(p, 72, 57, 25, bottom=True)  # the tile between them
     for y, focused in ((42, True), (57, False)):
-        strip_ground(p, 99, y, 50, focused, right=True, bottom=True)
+        strip_ground(p, 99, y, 50, right=True, bottom=True)
         title_button(p, 99 + 50 - 21, y + 3, "unshade")
         title_button(p, 99 + 50 - 11, y + 3, "close")
 

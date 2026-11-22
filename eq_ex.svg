@@ -15,10 +15,10 @@
 <rect x="264.5" y="3.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
 <path d="M266.5 5.5L270.5 9.5M270.5 5.5L266.5 9.5" fill="none" stroke="#2a8cff" stroke-width="1" class="ink-stroke"/>
 <rect x="0" y="15" width="275" height="14" fill="#0e0a13"/>
-<rect x="0" y="15" width="275" height="1" fill="#b01cc0" class="glow-mid"/>
-<rect x="0" y="28" width="275" height="1" fill="#b01cc0" class="glow-mid"/>
-<rect x="0" y="15" width="1" height="14" fill="#b01cc0" class="glow-mid"/>
-<rect x="274" y="15" width="1" height="14" fill="#b01cc0" class="glow-mid"/>
+<rect x="0" y="15" width="275" height="1" fill="#ff2cff" class="glow"/>
+<rect x="0" y="28" width="275" height="1" fill="#ff2cff" class="glow"/>
+<rect x="0" y="15" width="1" height="14" fill="#ff2cff" class="glow"/>
+<rect x="274" y="15" width="1" height="14" fill="#ff2cff" class="glow"/>
 <path d="M111 19H115V20H112V21H114V22H112V23H115V24H111zM116 20H117V23H118V22H119V20H120V24H117V23H116zM117 19H119V20H117zM121 19H122V23H124V24H122V23H121zM124 19H125V23H124zM126 20H127V21H129V20H130V24H129V22H127V24H126zM127 19H129V20H127zM131 19H132V23H135V24H131zM136 19H139V20H138V23H139V24H136V23H137V20H136zM141 19H145V21H144V22H142V23H145V24H141V22H142V21H144V20H141zM146 19H150V20H147V21H149V22H147V23H150V24H146zM151 19H154V20H155V21H154V23H155V24H154V23H153V22H152V24H151zM152 20V21H154V20z" fill="#14427e" class="ink-dim"/>
 <rect x="254.5" y="18.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
 <path d="M256 20h5v1h-5zM256 21h1v3h-1zM260 21h1v3h-1zM256 24h5v1h-5z" fill="#2a8cff" class="ink"/>

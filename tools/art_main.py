@@ -151,7 +151,7 @@ def mini_transport(p, x, y, w, h, eject=True):
 
 
 def shade_strip(p, y, focused):
-    strip_ground(p, X0, y, 275, focused, left=True, right=True, bottom=True)
+    strip_ground(p, X0, y, 275, left=True, right=True, bottom=True)
     title_button(p, X0 + 6, y + 3, "menu")
     letters(p, NAME, X0 + 20, y + 4, "ink" if focused else "ink-dim")
     well(p, X0 + SHADE_TIME[0], y + SHADE_TIME[1], *SHADE_TIME[2:])

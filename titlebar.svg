@@ -44,9 +44,9 @@
 <rect x="291.5" y="3.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
 <path d="M293.5 5.5L297.5 9.5M297.5 5.5L293.5 9.5" fill="none" stroke="#2a8cff" stroke-width="1" class="ink-stroke"/>
 <rect x="27" y="15" width="275" height="14" fill="#0e0a13"/>
-<rect x="27" y="15" width="275" height="1" fill="#b01cc0" class="glow-mid"/>
-<rect x="27" y="15" width="1" height="14" fill="#b01cc0" class="glow-mid"/>
-<rect x="301" y="15" width="1" height="14" fill="#b01cc0" class="glow-mid"/>
+<rect x="27" y="15" width="275" height="1" fill="#ff2cff" class="glow"/>
+<rect x="27" y="15" width="1" height="14" fill="#ff2cff" class="glow"/>
+<rect x="301" y="15" width="1" height="14" fill="#ff2cff" class="glow"/>
 <path d="M151 19H154V20H155V21H154V22H152V24H151zM152 20V21H154V20zM156 20H157V23H159V24H157V23H156zM157 19H159V20H160V23H159V20H157zM161 19H164V20H165V21H164V22H162V24H161zM162 20V21H164V20zM166 20H167V21H169V20H170V24H169V22H167V24H166zM167 19H169V20H167zM171 19H172V20H174V19H175V24H174V22H172V24H171zM176 19H179V20H180V21H179V22H177V24H176zM177 20V21H179V20z" fill="#14427e" class="ink-dim"/>
 <rect x="33.5" y="18.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
 <path d="M35 20h5v1h-5zM35 22h5v1h-5zM35 24h5v1h-5z" fill="#2a8cff" class="ink"/>
@@ -70,9 +70,9 @@
 <rect x="291.5" y="60.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
 <path d="M293.5 62.5L297.5 66.5M297.5 62.5L293.5 66.5" fill="none" stroke="#2a8cff" stroke-width="1" class="ink-stroke"/>
 <rect x="27" y="72" width="275" height="14" fill="#0e0a13"/>
-<rect x="27" y="72" width="275" height="1" fill="#b01cc0" class="glow-mid"/>
-<rect x="27" y="72" width="1" height="14" fill="#b01cc0" class="glow-mid"/>
-<rect x="301" y="72" width="1" height="14" fill="#b01cc0" class="glow-mid"/>
+<rect x="27" y="72" width="275" height="1" fill="#ff2cff" class="glow"/>
+<rect x="27" y="72" width="1" height="14" fill="#ff2cff" class="glow"/>
+<rect x="301" y="72" width="1" height="14" fill="#ff2cff" class="glow"/>
 <path d="M151 76H154V77H155V78H154V79H152V81H151zM152 77V78H154V77zM156 77H157V80H159V81H157V80H156zM157 76H159V77H160V80H159V77H157zM161 76H164V77H165V78H164V79H162V81H161zM162 77V78H164V77zM166 77H167V78H169V77H170V81H169V79H167V81H166zM167 76H169V77H167zM171 76H172V77H174V76H175V81H174V79H172V81H171zM176 76H179V77H180V78H179V79H177V81H176zM177 77V78H179V77z" fill="#14427e" class="ink-dim"/>
 <rect x="33.5" y="75.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
 <path d="M35 77h5v1h-5zM35 79h5v1h-5zM35 81h5v1h-5z" fill="#2a8cff" class="ink"/>
@@ -112,10 +112,10 @@
 <rect x="291.5" y="32.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
 <path d="M293.5 34.5L297.5 38.5M297.5 34.5L293.5 38.5" fill="none" stroke="#2a8cff" stroke-width="1" class="ink-stroke"/>
 <rect x="27" y="42" width="275" height="14" fill="#0e0a13"/>
-<rect x="27" y="42" width="275" height="1" fill="#b01cc0" class="glow-mid"/>
-<rect x="27" y="55" width="275" height="1" fill="#b01cc0" class="glow-mid"/>
-<rect x="27" y="42" width="1" height="14" fill="#b01cc0" class="glow-mid"/>
-<rect x="301" y="42" width="1" height="14" fill="#b01cc0" class="glow-mid"/>
+<rect x="27" y="42" width="275" height="1" fill="#ff2cff" class="glow"/>
+<rect x="27" y="55" width="275" height="1" fill="#ff2cff" class="glow"/>
+<rect x="27" y="42" width="1" height="14" fill="#ff2cff" class="glow"/>
+<rect x="301" y="42" width="1" height="14" fill="#ff2cff" class="glow"/>
 <rect x="33.5" y="45.5" width="8" height="8" rx="1.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
 <path d="M35 47h5v1h-5zM35 49h5v1h-5zM35 51h5v1h-5z" fill="#2a8cff" class="ink"/>
 <path d="M47 46H50V47H51V48H50V49H48V51H47zM48 47V48H50V47zM52 47H53V50H55V51H53V50H52zM53 46H55V47H56V50H55V47H53zM57 46H60V47H61V48H60V49H58V51H57zM58 47V48H60V47zM62 47H63V48H65V47H66V51H65V49H63V51H62zM63 46H65V47H63zM67 46H68V47H70V46H71V51H70V49H68V51H67zM72 46H75V47H76V48H75V49H73V51H72zM73 47V48H75V47z" fill="#14427e" class="ink-dim"/>
