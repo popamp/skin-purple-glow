@@ -107,17 +107,17 @@
 <rect x="0" y="72" width="1" height="37" fill="#ff2cff" class="glow"/>
 <rect x="1" y="72" width="10" height="1" fill="#06010a"/>
 <rect x="11" y="72" width="1" height="1" fill="#5c0a68" class="glow-dim"/>
-<rect x="15.5" y="81.5" width="19" height="15" rx="2.5" fill="none" stroke="#ff2cff" stroke-width="3" opacity="0.85" filter="url(#glow)" class="glow-stroke"/>
-<rect x="15.5" y="81.5" width="19" height="15" rx="2.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
+<rect x="13.5" y="81.5" width="23" height="15" rx="2.5" fill="none" stroke="#ff2cff" stroke-width="3" opacity="0.85" filter="url(#glow)" class="glow-stroke"/>
+<rect x="13.5" y="81.5" width="23" height="15" rx="2.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
 <path d="M18 87H19V88H21V87H22V91H21V89H19V91H18zM19 86H21V87H19zM23 86H26V87H27V90H26V91H23zM24 87V90H26V87zM28 86H31V87H32V90H31V91H28zM29 87V90H31V87z" fill="#2a8cff" class="ink"/>
-<rect x="44.5" y="81.5" width="19" height="15" rx="2.5" fill="none" stroke="#ff2cff" stroke-width="3" opacity="0.85" filter="url(#glow)" class="glow-stroke"/>
-<rect x="44.5" y="81.5" width="19" height="15" rx="2.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
+<rect x="42.5" y="81.5" width="23" height="15" rx="2.5" fill="none" stroke="#ff2cff" stroke-width="3" opacity="0.85" filter="url(#glow)" class="glow-stroke"/>
+<rect x="42.5" y="81.5" width="23" height="15" rx="2.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
 <path d="M47 86H50V87H51V88H50V90H51V91H50V90H49V89H48V91H47zM48 87V88H50V87zM52 86H56V87H53V88H55V89H53V90H56V91H52zM57 86H58V87H60V86H61V91H60V89H58V91H57z" fill="#2a8cff" class="ink"/>
-<rect x="73.5" y="81.5" width="19" height="15" rx="2.5" fill="none" stroke="#ff2cff" stroke-width="3" opacity="0.85" filter="url(#glow)" class="glow-stroke"/>
-<rect x="73.5" y="81.5" width="19" height="15" rx="2.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
+<rect x="71.5" y="81.5" width="23" height="15" rx="2.5" fill="none" stroke="#ff2cff" stroke-width="3" opacity="0.85" filter="url(#glow)" class="glow-stroke"/>
+<rect x="71.5" y="81.5" width="23" height="15" rx="2.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
 <path d="M76 87H77V88H79V89H80V90H79V91H76V90H79V89H77V88H76zM77 86H80V87H77zM81 86H85V87H82V88H84V89H82V90H85V91H81zM86 86H87V90H90V91H86z" fill="#2a8cff" class="ink"/>
-<rect x="102.5" y="81.5" width="19" height="15" rx="2.5" fill="none" stroke="#ff2cff" stroke-width="3" opacity="0.85" filter="url(#glow)" class="glow-stroke"/>
-<rect x="102.5" y="81.5" width="19" height="15" rx="2.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
+<rect x="100.5" y="81.5" width="23" height="15" rx="2.5" fill="none" stroke="#ff2cff" stroke-width="3" opacity="0.85" filter="url(#glow)" class="glow-stroke"/>
+<rect x="100.5" y="81.5" width="23" height="15" rx="2.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
 <path d="M102 86H103V87H105V86H106V91H105V89H103V91H102zM107 86H110V87H109V90H110V91H107V90H108V87H107zM112 87H113V88H115V89H116V90H115V91H112V90H115V89H113V88H112zM113 86H116V87H113zM117 87H118V90H121V91H118V90H117zM118 86H121V87H118z" fill="#2a8cff" class="ink"/>
 <rect x="126" y="72" width="150" height="38" fill="#06010a"/>
 <rect x="126" y="72" width="150" height="1" fill="#5c0a68" class="glow-dim"/>
@@ -141,8 +141,8 @@
 <path d="M191 93h36v12h-36zM192 94v10h34v-10z" fill="#5c0a68" class="glow-dim"/>
 <rect x="210" y="97" width="1" height="1" fill="#ff2cff" class="glow"/>
 <rect x="210" y="99" width="1" height="1" fill="#ff2cff" class="glow"/>
-<rect x="233.5" y="81.5" width="19" height="15" rx="2.5" fill="none" stroke="#ff2cff" stroke-width="3" opacity="0.85" filter="url(#glow)" class="glow-stroke"/>
-<rect x="233.5" y="81.5" width="19" height="15" rx="2.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
+<rect x="231.5" y="81.5" width="23" height="15" rx="2.5" fill="none" stroke="#ff2cff" stroke-width="3" opacity="0.85" filter="url(#glow)" class="glow-stroke"/>
+<rect x="231.5" y="81.5" width="23" height="15" rx="2.5" fill="url(#g0)" stroke="#ff2cff" class="glow-stroke"/>
 <path d="M233 86H234V90H237V91H233zM238 86H241V87H240V90H241V91H238V90H239V87H238zM243 87H244V88H246V89H247V90H246V91H243V90H246V89H244V88H243zM244 86H247V87H244zM248 86H251V87H250V91H249V87H248z" fill="#2a8cff" class="ink"/>
 <path d="M273 107h1v1h-1zM273 104h1v1h-1zM273 101h1v1h-1zM273 98h1v1h-1zM270 107h1v1h-1zM270 104h1v1h-1zM270 101h1v1h-1zM267 107h1v1h-1zM267 104h1v1h-1zM264 107h1v1h-1z" fill="#ff2cff" class="glow"/>
 <rect x="179" y="0" width="25" height="38" fill="#06010a"/>

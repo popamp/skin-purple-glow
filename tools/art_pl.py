@@ -94,12 +94,18 @@ def bottom_ground(p, x, y, w, left=False, right=False):
         p.rect(x + w - 1, y, 1, BOTTOM, "glow")
 
 
+# How much wider the bottom buttons are drawn than the 22 pixels the player clicks: four letters and the
+# button's glowing margin need 26. They spread evenly about their places; MISC's right edge meets the
+# left piece's end.
+WIDER = 4
+
+
 def bottom_left(p):
     bottom_ground(p, 0, 72, 125, left=True)
     p.rect(1, 72, 10, 1, "body")  # the rim starts under the list
     p.rect(11, 72, 1, 1, "glow-dim")
     for word, x in BUTTONS:
-        lettered_button(p, x, 80, 22, 18, word)
+        lettered_button(p, x - WIDER // 2, 80, 22 + WIDER, 18, word)
 
 
 def grip(p, x, y):
@@ -120,7 +126,7 @@ def bottom_right(p):
     well(p, x0 + 65, y0 + 21, 36, 12)
     p.rect(x0 + 84, y0 + 25, 1, 1, "glow")
     p.rect(x0 + 84, y0 + 27, 1, 1, "glow")
-    lettered_button(p, x0 + 106, y0 + 8, 22, 18, "LIST")
+    lettered_button(p, x0 + 106 - WIDER // 2, y0 + 8, 22 + WIDER, 18, "LIST")
     grip(p, x0 + 150 - 3, y0 + BOTTOM - 3)
 
 
