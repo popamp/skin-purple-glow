@@ -323,7 +323,7 @@ empty_press = "nothing"
 wheel_scrolls_list = true
 
 [window.normal]
-size = [275, 116]
+size = [400, 232]
 resize_step = [25, 29]
 cursor = "pnormal"
 
@@ -343,8 +343,8 @@ fill = "tile"
 [[window.normal.element]]
 type = "image"
 edges = ["end-25", 0, "end", 20]
-normal = { file = "pl/pledit.svg", area = [153, 0, 25, 20] }
-inactive = { file = "pl/pledit.svg", area = [153, 21, 25, 20] }
+normal = { file = "ml/title-right.svg", area = [0, 0, 25, 20] }
+inactive = { file = "ml/title-right.svg", area = [0, 21, 25, 20] }
 
 [[window.normal.element]]
 type = "image"
@@ -354,36 +354,60 @@ inactive = { file = "ml/title.svg", area = [0, 21, 100, 20] }
 
 [[window.normal.element]]
 type = "image"
-edges = [0, 20, 12, "end-38"]
+rect = [0, 14, 220, 49]
+normal = "ml/strip-left.svg"
+
+[[window.normal.element]]
+type = "image"
+edges = [220, 14, "end-16", 63]
+normal = "ml/strip-mid.svg"
+fill = "tile"
+
+[[window.normal.element]]
+type = "image"
+edges = ["end-16", 14, "end", 63]
+normal = "ml/strip-right.svg"
+
+[[window.normal.element]]
+type = "image"
+edges = [0, 63, 12, "end-38"]
 normal = { file = "pl/pledit.svg", area = [0, 42, 12, 29] }
 fill = "tile"
 
 [[window.normal.element]]
 type = "image"
-edges = ["end-20", 20, "end", "end-38"]
+edges = ["end-20", 63, "end", "end-38"]
 normal = { file = "pl/pledit.svg", area = [31, 42, 20, 29] }
 fill = "tile"
 
 [[window.normal.element]]
 type = "image"
-edges = [12, "end-38", "end-150", "end"]
-normal = { file = "pl/pledit.svg", area = [179, 0, 25, 38] }
+edges = [0, "end-38", 130, "end"]
+normal = "ml/bottom-left.svg"
+
+[[window.normal.element]]
+type = "image"
+edges = [130, "end-38", "end-120", "end"]
+normal = "ml/bottom-mid.svg"
 fill = "tile"
 
 [[window.normal.element]]
 type = "image"
-edges = [0, "end-38", 12, "end"]
-normal = { file = "pl/pledit.svg", area = [0, 72, 12, 38] }
-
-[[window.normal.element]]
-type = "image"
-edges = ["end-150", "end-38", "end", "end"]
-normal = { file = "pl/pledit.svg", area = [126, 72, 150, 38] }
+edges = ["end-120", "end-38", "end", "end"]
+normal = "ml/bottom-right.svg"
 
 [[window.normal.element]]
 type = "drag"
-edges = [0, 0, "end", 20]
+edges = [0, 0, "end-22", 16]
+double = "toggle-library-maximize"
 cursor = "ptbar"
+
+[[window.normal.element]]
+type = "button"
+edges = ["end-20", 3, "end-11", 12]
+pressed = { file = "ml/title-right.svg", area = [0, 42, 9, 9] }
+click = "toggle-library-maximize"
+tip = "Maximize"
 
 [[window.normal.element]]
 type = "button"
@@ -394,55 +418,163 @@ cursor = "pclose"
 tip = "Close"
 
 [[window.normal.element]]
-type = "library"
-edges = [12, 20, "end-7", "end-38"]
-menu = "library"
-thumb = { normal = { file = "pl/pledit.svg", area = [52, 53, 8, 18] }, pressed = { file = "pl/pledit.svg", area = [61, 53, 8, 18] } }
+type = "image"
+rect = [15, 22, 9, 9]
+normal = { file = "main/playpaus.svg", area = [0, 0, 9, 9] }
+show = "playing"
 
 [[window.normal.element]]
-type = "text"
-edges = ["end-143", "end-28", "end-58", "end-22"]
-text = "library-status"
+type = "image"
+rect = [15, 22, 9, 9]
+normal = { file = "main/playpaus.svg", area = [9, 0, 9, 9] }
+show = "paused"
 
 [[window.normal.element]]
-type = "text"
-edges = ["end-82", "end-14", "end-52", "end-8"]
-text = "playlist-clock"
+type = "image"
+rect = [15, 22, 9, 9]
+normal = { file = "main/playpaus.svg", area = [18, 0, 9, 9] }
+show = "stopped"
+
+[[window.normal.element]]
+type = "clock"
+rect = [21, 20, 63, 13]
 hide = "stopped"
 
 [[window.normal.element]]
 type = "button"
-edges = ["end-145", "end-16", "end-137", "end-9"]
+rect = [21, 20, 63, 13]
+press = "toggle-time-mode"
+menu = "time"
+
+[[window.normal.element]]
+type = "marquee"
+rect = [15, 36, 190, 9]
+double = "file-info"
+cursor = "songname"
+tip = "Song Title (right-click for options)"
+menu = "song-title"
+
+[[window.normal.element]]
+type = "text"
+rect = [15, 49, 15, 6]
+text = "kbps"
+
+[[window.normal.element]]
+type = "text"
+rect = [67, 49, 15, 6]
+text = "khz"
+
+[[window.normal.element]]
+type = "vis"
+edges = [211, 19, "end-9", 57]
+
+[[window.normal.element]]
+type = "button"
+edges = [211, 19, "end-9", 57]
+press = "cycle-vis-mode"
+menu = "vis"
+
+[[window.normal.element]]
+type = "library"
+edges = [12, 63, "end-7", "end-38"]
+menu = "library"
+thumb = { normal = { file = "pl/pledit.svg", area = [52, 53, 8, 18] }, pressed = { file = "pl/pledit.svg", area = [61, 53, 8, 18] } }
+
+[[window.normal.element]]
+type = "slider"
+edges = [11, "end-36", "end-6", "end-26"]
+value = "position"
+thumb = { normal = { file = "main/posbar.svg", area = [248, 0, 29, 10] }, pressed = { file = "main/posbar.svg", area = [278, 0, 29, 10] } }
+thumb_len = 29
+live = false
+show = "seekable"
+cursor = "posbar"
+menu = "seek"
+
+[[window.normal.element]]
+type = "text"
+edges = [14, "end-16", 118, "end-10"]
+text = "library-status"
+
+[[window.normal.element]]
+type = "button"
+edges = ["center-69", "end-22", "center-46", "end-4"]
+normal = { file = "main/cbuttons.svg", area = [0, 0, 23, 18] }
+pressed = { file = "main/cbuttons.svg", area = [0, 18, 23, 18] }
 click = "previous"
+shift = "back5s"
+ctrl = "start-of-list"
+menu = "previous"
+tip = "Previous"
 
 [[window.normal.element]]
 type = "button"
-edges = ["end-136", "end-16", "end-128", "end-9"]
-click = "play"
+edges = ["center-46", "end-22", "center-23", "end-4"]
+normal = { file = "main/cbuttons.svg", area = [23, 0, 23, 18] }
+pressed = { file = "main/cbuttons.svg", area = [23, 18, 23, 18] }
+click = "library-play"
+shift = "open-file"
+ctrl = "open-url"
+menu = "play"
+tip = "Play the picked track"
 
 [[window.normal.element]]
 type = "button"
-edges = ["end-127", "end-16", "end-119", "end-9"]
+edges = ["center-23", "end-22", "center+0", "end-4"]
+normal = { file = "main/cbuttons.svg", area = [46, 0, 23, 18] }
+pressed = { file = "main/cbuttons.svg", area = [46, 18, 23, 18] }
 click = "pause"
+menu = "pause"
+tip = "Pause"
 
 [[window.normal.element]]
 type = "button"
-edges = ["end-118", "end-16", "end-110", "end-9"]
+edges = ["center+0", "end-22", "center+23", "end-4"]
+normal = { file = "main/cbuttons.svg", area = [69, 0, 23, 18] }
+pressed = { file = "main/cbuttons.svg", area = [69, 18, 23, 18] }
 click = "stop"
+shift = "stop-fadeout"
+ctrl = "stop-after-current"
+menu = "stop"
+tip = "Stop"
 
 [[window.normal.element]]
 type = "button"
-edges = ["end-109", "end-16", "end-101", "end-9"]
+edges = ["center+23", "end-22", "center+45", "end-4"]
+normal = { file = "main/cbuttons.svg", area = [92, 0, 22, 18] }
+pressed = { file = "main/cbuttons.svg", area = [92, 18, 22, 18] }
 click = "next"
+shift = "fwd5s"
+ctrl = "end-of-list"
+menu = "next"
+tip = "Next"
 
 [[window.normal.element]]
 type = "button"
-edges = ["end-100", "end-16", "end-91", "end-9"]
+edges = ["center+47", "end-21", "center+69", "end-5"]
+normal = { file = "main/cbuttons.svg", area = [114, 0, 22, 16] }
+pressed = { file = "main/cbuttons.svg", area = [114, 16, 22, 16] }
 click = "open-file"
+shift = "open-folder"
+ctrl = "open-url"
+menu = "eject"
+tip = "Open"
+
+[[window.normal.element]]
+type = "slider"
+edges = ["end-116", "end-20", "end-48", "end-6"]
+value = "volume"
+track = { file = "bar/controls.svg", first = [0, 64, 68, 14], step = [0, 14], count = 28 }
+thumb = { normal = { file = "bar/controls.svg", area = [15, 456, 14, 12], offset = [0, 1] }, pressed = { file = "bar/controls.svg", area = [0, 456, 14, 12], offset = [0, 1] } }
+thumb_len = 14
+reset = 200
+wheel_step = 8
+cursor = "volbal"
+tip = "Volume"
 
 [[window.normal.element]]
 type = "button"
-edges = ["end-44", "end-29", "end-22", "end-14"]
+edges = ["end-42", "end-22", "end-20", "end-4"]
 menu_release = "library"
 tip = "Library Menu"
 

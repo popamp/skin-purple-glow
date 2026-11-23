@@ -16,6 +16,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import art_bar  # noqa: E402
 import art_eq  # noqa: E402
 import art_main  # noqa: E402
+import art_ml  # noqa: E402
 import art_pl  # noqa: E402
 import windows  # noqa: E402
 from kit import Picture, colour_sets, sheet_file  # noqa: E402
@@ -76,6 +77,8 @@ def build(out):
     for name, (w, h, art) in art_bar.PICTURES.items():
         draw(os.path.join(out, "bar", f"{name}.svg"), w, h, art)
     draw(os.path.join(out, "ml", "title.svg"), art_pl.PLATE_W, 41, art_pl.ml_title)
+    for name, (w, h, art) in art_ml.PICTURES.items():
+        draw(os.path.join(out, "ml", f"{name}.svg"), w, h, art)
     with open(os.path.join(out, "skin.toml"), "w", encoding="utf-8") as f:
         f.write(skin_toml())
 

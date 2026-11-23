@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="49" viewBox="0 0 220 49">
+<rect x="0" y="0" width="220" height="49" fill="#06010a"/>
+<rect x="0" y="0" width="1" height="49" fill="#ff2cff" class="glow"/>
+<rect x="11" y="48" width="209" height="1" fill="#5c0a68" class="glow-dim"/>
+<rect x="11" y="2" width="210" height="44" fill="#000000"/>
+<path d="M11 2h210v44h-210zM12 3v42h208v-42z" fill="#5c0a68" class="glow-dim"/>
+<rect x="57" y="10" width="2" height="2" fill="#ff2cff" class="glow"/>
+<rect x="57" y="15" width="2" height="2" fill="#ff2cff" class="glow"/>
+<path d="M35 35H36V37H37V38H38V39H39V40H38V39H37V38H36V40H35zM37 36H38V37H37zM38 35H39V36H38zM40 35H43V36H44V37H43V38H44V39H43V40H40zM41 36V37H43V36zM41 38V39H43V38zM45 35H48V36H49V37H48V38H46V40H45zM46 36V37H48V36zM50 36H51V37H53V38H54V39H53V40H50V39H53V38H51V37H50zM51 35H54V36H51z" fill="#b01cc0" class="glow-mid"/>
+<path d="M82 35H83V37H84V38H85V39H86V40H85V39H84V38H83V40H82zM84 36H85V37H84zM85 35H86V36H85zM87 35H88V37H90V35H91V40H90V38H88V40H87zM92 35H96V37H95V38H93V39H96V40H92V38H93V37H95V36H92z" fill="#b01cc0" class="glow-mid"/>
+<rect x="208" y="5" width="1" height="38" fill="#5c0a68" class="glow-dim"/>
+</svg>
