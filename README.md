@@ -34,7 +34,7 @@ of [Popamp Default](https://github.com/popamp/popamp-skin-default)'s.
 ![Purple Glow: main window, equalizer and playlist in every colour set side by side at double size, and the bar below](preview.png)
 
 A vector skin for [Popamp](https://github.com/popamp/popamp), skin format
-version 1. Needs Popamp 1.0.0 or newer.
+version 1. Needs Popamp 1.2.0 or newer.
 
 ## Install
 

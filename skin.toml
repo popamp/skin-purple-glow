@@ -4,7 +4,7 @@
 name = "Purple Glow"
 author = "Popamp, after the Winamp skin Purple Glow v2"
 format_version = 1
-min_popamp = "1.0.0"
+min_popamp = "1.2.0"
 
 [colors.Purple]
 glow = "#ff2cff"
